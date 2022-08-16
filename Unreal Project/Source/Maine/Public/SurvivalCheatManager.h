@@ -5,7 +5,7 @@
 #include "GameplayTagContainer.h"
 #include "SurvivalCheatManager.generated.h"
 
-UCLASS()
+UCLASS(ClassGroup=(Custom), meta=(BlueprintSpawnableComponent))
 class MAINE_API USurvivalCheatManager : public UCheatManager {
     GENERATED_BODY()
 public:
