@@ -9,12 +9,18 @@ UStaminaComponent::UStaminaComponent()
 	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
 	// off to improve performance if you don't need them.
 	PrimaryComponentTick.bCanEverTick = true;
-	StaminaToHungerRatio = 0.0f;
-	RegenRate = 0.0f;
-	RegenDelay = 0.0f;
-	MaxStamina = 0.0f;
-	CurrentStamina = 0.0f;
+	this->CurrentStamina = 0.00f;
+	this->MaxStamina = 100.00f;
+	this->RegenDelay = 1.00f;
+	this->RegenRate = 20.00f;
+	this->ExhaustedStaminaDelay = 3.00f;
+	this->bExhausted = false;
+	this->StaminaToHungerRatio = 0.01f;
 	// ...
+}
+
+void UStaminaComponent::Restore()
+{
 }
 
 
@@ -34,5 +40,53 @@ void UStaminaComponent::TickComponent(float DeltaTime, ELevelTick TickType, FAct
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
 	// ...
+}
+
+bool UStaminaComponent::IsStaminaCapped() const
+{
+	return false;
+}
+
+bool UStaminaComponent::IsEmpty() const
+{
+	return false;
+}
+
+float UStaminaComponent::GetStaminaRatio() const
+{
+	return 0.0f;
+}
+
+float UStaminaComponent::GetMaxStaminaCapped() const
+{
+	return 0.0f;
+}
+
+float UStaminaComponent::GetMaxStamina() const
+{
+	return 0.0f;
+}
+
+float UStaminaComponent::GetEnergyRatio() const
+{
+	return 0.0f;
+}
+
+float UStaminaComponent::GetCurrentStamina() const
+{
+	return 0.0f;
+}
+
+void UStaminaComponent::ConsumeStamina(float AmountToConsume)
+{
+}
+
+bool UStaminaComponent::CanRegenerate() const
+{
+	return false;
+}
+
+void UStaminaComponent::AddStamina(float AmountToAdd)
+{
 }
 

@@ -15,7 +15,9 @@ class MAINE_API UStaminaComponent : public UActorComponent
 public:	
 	// Sets default values for this component's properties
 	UStaminaComponent();
-
+	UFUNCTION(BlueprintCallable)
+	void Restore();
+	
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
@@ -34,4 +36,38 @@ public:
 		float MaxStamina;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "SurvivalComponent")
 		float CurrentStamina;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "SurvivalComponent")
+	float ExhaustedStaminaDelay;
+	UPROPERTY(Transient, BlueprintReadWrite, Category = "SurvivalComponent")
+	bool bExhausted;
+
+	UFUNCTION(BlueprintPure)
+	bool IsStaminaCapped() const;
+    
+	UFUNCTION(BlueprintPure)
+	bool IsEmpty() const;
+    
+	UFUNCTION(BlueprintPure)
+	float GetStaminaRatio() const;
+    
+	UFUNCTION(BlueprintPure)
+	float GetMaxStaminaCapped() const;
+    
+	UFUNCTION(BlueprintPure)
+	float GetMaxStamina() const;
+    
+	UFUNCTION(BlueprintPure)
+	float GetEnergyRatio() const;
+    
+	UFUNCTION(BlueprintPure)
+	float GetCurrentStamina() const;
+    
+	UFUNCTION(BlueprintCallable)
+	void ConsumeStamina(float AmountToConsume);
+    
+	UFUNCTION(BlueprintPure)
+	bool CanRegenerate() const;
+    
+	UFUNCTION(BlueprintCallable)
+	void AddStamina(float AmountToAdd);
 };
