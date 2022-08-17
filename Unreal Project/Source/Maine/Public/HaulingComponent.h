@@ -16,7 +16,7 @@ public:
 	// Sets default values for this component's properties
 	UHaulingComponent();
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inventory")
-		int Capacity;
+		int32 Capacity;
 
 protected:
 	// Called when the game starts
