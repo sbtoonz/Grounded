@@ -1,7 +1,7 @@
  // Fill out your copyright notice in the Description page of Project Settings.
 
-
 #include "SurvivalPlayerCharacter.h"
+#include "HeatHazardComponent.h"
 
 // Sets default values
 ASurvivalPlayerCharacter::ASurvivalPlayerCharacter()
@@ -15,6 +15,7 @@ ASurvivalPlayerCharacter::ASurvivalPlayerCharacter()
 	EquipmentComponent = CreateDefaultSubobject<UEquipmentComponent>("EquipmentComponent");
 	HaulingComponent = CreateDefaultSubobject<UHaulingComponent>("HaulingComponent");
 
+	HeatHazardComponent = CreateDefaultSubobject<UHeatHazardComponent>(TEXT("HeatHazardComponent"));
 	InventoryComponent = CreateDefaultSubobject<UInventoryComponent>("InventoryComponent");
 //	CharMoveComp = CreateDefaultSubobject<UMaineCharMovementComponent>("CharMoveComp");
 	PersistenceComponent = CreateDefaultSubobject<UPersistenceComponent>("PersistenceComponent");

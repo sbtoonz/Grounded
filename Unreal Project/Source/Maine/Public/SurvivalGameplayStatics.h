@@ -17,7 +17,8 @@ class MAINE_API USurvivalGameplayStatics : public UGameplayStatics
 	
 public:
 	// Called when the game starts or when spawned
-	UFUNCTION(BlueprintCallable, Category="Grounded")
-	static ASurvivalPlayerCharacter* GetLocalSurvivalPlayerCharacter();
+	UFUNCTION(BlueprintPure, BlueprintCallable, Category="Grounded")
+    static ASurvivalPlayerCharacter* GetLocalSurvivalPlayerCharacter(const UObject* WorldContextObject);
+    
 
 };

@@ -3,8 +3,7 @@
 
 #include "SurvivalGameplayStatics.h"
 
-ASurvivalPlayerCharacter* USurvivalGameplayStatics::GetLocalSurvivalPlayerCharacter()
-{
-	ASurvivalPlayerCharacter* Pawn = NewObject<ASurvivalPlayerCharacter>(ASurvivalPlayerCharacter::StaticClass());
-	return Pawn;
+ASurvivalPlayerCharacter* USurvivalGameplayStatics::GetLocalSurvivalPlayerCharacter(const UObject* WorldContextObject) {
+	return NULL;
 }
+

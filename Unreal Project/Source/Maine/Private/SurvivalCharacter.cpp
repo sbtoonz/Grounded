@@ -17,6 +17,10 @@ ASurvivalCharacter::ASurvivalCharacter()
 	StatusEffectComponent = CreateDefaultSubobject<UStatusEffectComponent>("StatusEffectComponent");
 	TeamComponent = CreateDefaultSubobject<UTeamComponent>("TeamComponent");
 	ObsidianIDComponent = CreateDefaultSubobject<UObsidianIDComponent>("ObsidianIDComponent");
+	this->DesiredJumpHeightMult = 0.00f;
+	this->ThirdPersonFollowDistance = 350.00f;
+	this->MinimumFallDamageVelocity = 2100.00f;
+	this->FallDamageRatio = 0.07f;
 }
 
 // Called when the game starts or when spawned

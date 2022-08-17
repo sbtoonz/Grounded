@@ -22,6 +22,8 @@
 #include <Maine\Public\SurvivalComponent.h>
 #include <Maine\Public\TeamComponent.h>
 #include <OEICommon\Public\ObsidianIDComponent.h>
+
+#include "HeatHazardComponent.h"
 #include "SurvivalPlayerCharacter.generated.h"
 
 UCLASS()
@@ -56,7 +58,9 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Survival Component")
 		USurvivalComponent* SurvivalComponent;
-
+	
+	UPROPERTY(BlueprintReadWrite, Export, VisibleAnywhere)
+	UHeatHazardComponent* HeatHazardComponent;
 
 protected:
 	// Called when the game starts or when spawned

@@ -45,6 +45,19 @@ public:
 		UTeamComponent* TeamComponent;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Survival Component")
 		UObsidianIDComponent* ObsidianIDComponent;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Survival Component")
+	float FallDamageRatio;
+	
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Survival Component")
+	float MinimumFallDamageVelocity;
+
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Survival Component")
+	float ThirdPersonFollowDistance;
+
+	UPROPERTY(Transient, BlueprintReadWrite, Category = "Survival Component")
+	float DesiredJumpHeightMult;
+	
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
