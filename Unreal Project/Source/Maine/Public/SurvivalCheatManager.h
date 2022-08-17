@@ -10,220 +10,220 @@ class MAINE_API USurvivalCheatManager : public UCheatManager {
     GENERATED_BODY()
 public:
     USurvivalCheatManager();
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void WendellFollow();
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void UnlockRecipe(FName RecipeName);
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void UnlockPlayerUpgrade(FName UpgradeName);
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void UnlockItemStackUpgrade(FGameplayTag ItemStackTag);
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void UnlockAllTechTrees();
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void UnlockAllTechTreeRecipes();
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void UnlockAllRecipes(RecipeUnlockMode Mode);
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void UnlockAllPOIs();
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void UnlockAllPerks();
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void UnlockAllKeyItems();
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void UnlockAllColorThemes();
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void TryKill();
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void TryDamage(float DamageAmount);
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void ToggleSubtitles();
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void ToggleSpawnPointDebug();
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void TogglePlayerSpectatorMode();
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void ToggleHUD();
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void ToggleCameraShake();
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void ToggleAlternateRecipeMode();
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void TimeSpeed(float Multiplier);
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void TeleportPartyToMe();
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void TameNearest();
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void SwapNearbyFoliage(float Radius);
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void Stamina(bool Enabled);
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void SpawnBird();
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void ShowWaveStats();
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void SetTime(int32 Hour, bool Lock);
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void SetOverrideLevelName(const FString& LevelName);
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void SetHungerThirstKill(bool bShouldKill);
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void SetGlobalValue(const FString& Global, int32 Value);
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void SetCompletedBurgleQuestCount(int32 Count);
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void SetBonusEnhancementLevel(FGameplayTag EnhancementTag, int32 BonusEnhancementLevel);
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void SetBaseEnhancementLevel(int32 BaseEnhancementLevel);
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void Revive();
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void ResetConversations();
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void ResearchAllItems();
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void RepairAllItems();
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void RemoveAchievement(FName AchievementName);
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void RecoverBackpacks();
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void PopulationMonitorDump();
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void LogFactionReputations();
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void LogActorAndFoliageCount();
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void InfiniteDamage();
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void GiveItem(FName ItemName, int32 Quantity);
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void FullRestore();
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void FreezePlayerSizzle(bool Freeze);
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void ForceSpawnWave(FGameplayTag TeamName, int32 Heat);
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void ForceRegenerateBurgleQuests();
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void ForceEndWave();
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void Fish();
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void Fireproof();
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void FillPheromoneBroadcasters(FGameplayTag PheromoneTag);
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void EquipItem(FName ItemName);
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void DumpPreplacedNotProxyableObjects();
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void DumpOnlyRelevantToOwnerClasses();
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void DumpMobileReplicatedActors();
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void DumpAlwaysReplicatedClasses();
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void DestroyCreaturesHalf();
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void CompleteActiveDefensePoint();
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void ClearWaveCooldown();
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void Clean(float Radius);
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void BuildAllBuildings();
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void BreakAllItems();
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void AwardAchievement(FName AchievementName);
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void AlmostBreakAllItems();
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void AdvanceTimeToHour(int32 Hour);
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void AdvanceTimeByHours(float Hours);
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void AddStatusEffect(FName StatusEffectName);
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void AddScience(int32 Amount);
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void AddReputation(FGameplayTag Faction, int32 Value);
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void AddPersonalUpgradePoints(int32 Amount);
     
-    UFUNCTION(Exec)
+    UFUNCTION(BlueprintCallable, Category="SurvivalCheatManager", Exec)
     void AddPartyUpgradePoints(int32 Amount);
     
 };
