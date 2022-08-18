@@ -35,46 +35,46 @@ public:
 	UPROPERTY(Replicated, Transient, VisibleInstanceOnly)
 	float CurrentStunValue;
     
-	UPROPERTY(EditDefaultsOnly)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Reaction Component")
 	float MaxStunValue;
     
-	UPROPERTY(EditDefaultsOnly)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Reaction Component")
 	float StunDecayRate;
     
-	UPROPERTY(EditDefaultsOnly)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Reaction Component")
 	float StunDuration;
     
-	UPROPERTY(EditDefaultsOnly)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Reaction Component")
 	float StunCooldown;
     
-	UPROPERTY(EditDefaultsOnly)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Reaction Component")
 	bool bOnlyStunFromBlocks;
     
-	UPROPERTY(EditDefaultsOnly)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Reaction Component")
 	bool bOnlyStunWhileFlying;
     
-	UPROPERTY(EditDefaultsOnly)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Reaction Component")
 	bool bFlinchOnTakeDamageDuringStun;
     
-	UPROPERTY(EditDefaultsOnly)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Reaction Component")
 	int32 StaggerThreshold;
 
-	UFUNCTION(BlueprintPure)
+	UFUNCTION(BlueprintCallable, Category="Reaction Component")
 	bool IsStunned() const;
     
-	UFUNCTION(BlueprintPure)
+	UFUNCTION(BlueprintCallable, Category="Reaction Component")
 	float GetStunRatio() const;
     
-	UFUNCTION(BlueprintPure)
+	UFUNCTION(BlueprintCallable, Category="Reaction Component")
 	float GetStunDuration() const;
     
-	UFUNCTION(BlueprintPure)
+	UFUNCTION(BlueprintCallable, Category="Reaction Component")
 	float GetMaxStun() const;
     
-	UFUNCTION(BlueprintPure)
+	UFUNCTION(BlueprintCallable, Category="Reaction Component")
 	bool CanBeStunned() const;
     
-	UFUNCTION(BlueprintCallable)
+	UFUNCTION(BlueprintCallable, Category="Reaction Component")
 	void BeginStun();
 		
 };
