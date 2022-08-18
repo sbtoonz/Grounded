@@ -27,10 +27,10 @@ public:
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 	UFUNCTION()
-	void OnHit(float Damage, const FDamageInfo& DamageInfo, AController* InstigatedBy, UBaseLODActor* DamageCauser, bool IsKillingBlow);
+	static void OnHit(float Damage, const FDamageInfo& DamageInfo, AController* InstigatedBy, UBaseLODActor* DamageCauser, bool IsKillingBlow);
     
 	UFUNCTION()
-	void OnHealthStateChanged(EHealthState NewHealthState);
+	static void OnHealthStateChanged(EHealthState NewHealthState);
 	
 	UPROPERTY(Replicated, Transient, VisibleInstanceOnly)
 	float CurrentStunValue;

@@ -33,13 +33,13 @@ public:
     UFUNCTION(BlueprintCallable)
     void SpawnProjectile(FTransform SpawnTransform);
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool ShouldLockRotation() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool ShouldEndOnHit() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool ShouldChargeHitOnlyOnCharacter() const;
     
     UFUNCTION(BlueprintCallable)
@@ -48,124 +48,124 @@ public:
     UFUNCTION(BlueprintCallable)
     EAttackResolutionType ResolveAttack(bool UseSecondaryDamageData, int32 SecondaryDamageDataIndex);
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool RequiresFacing() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool IsSummonAttack() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool IsSelfDestruct() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool IsSelfAttack() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool IsRangedAttack() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool IsLoopingAttack() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool IsHostile() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool IsHazardAttack() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool IsCharged() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool IsAOE() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool HasToSummonBossMobPhase() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     UAnimMontage* GetWeaponAnimMontage() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     int32 GetTier() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     int32 GetStaminaCost() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     float GetSoundRange() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     float GetSoundIntensity() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     float GetPreferredMaxDistance() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     float GetPreferredHeight() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     float GetPreferredDistancePostLunge() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     AActor* GetOwner() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     UAnimMontage* GetOverrideDeflectAnim() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     float GetMinDistance() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     float GetMaxDuration() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     float GetMaxDistance() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     UItem* GetItemOwner() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     AController* GetInstigatorController() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     AActor* GetInstigator() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     EAttackHitType GetHitResolutionType() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     FDataTableRowHandle GetDeathNotification() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     uint8 GetDamageTypeFlags() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     TSubclassOf<USurvivalDamageType> GetDamageType() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     float GetChargeTimer() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     float GetChargeRatio() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     int32 GetChargedStaminaCost() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     float GetAttackRange() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     FDataTableRowHandle GetAttackDataRowHandle() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     UAnimMontage* GetAnimMontage() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool FireAttackOnFullCharge() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool DoesHitFrameLoop() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool CanCharge() const;
     
     
