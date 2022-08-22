@@ -1,27 +1,37 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
-
 #include "LootBag.h"
+#include "Net/UnrealNetwork.h"
+#include "InventoryComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=OEICommon -ObjectName=ObsidianIDComponent -FallbackName=ObsidianIDComponent
+#include "LootComponent.h"
+#include "PersistenceComponent.h"
 
-// Sets default values
-ALootBag::ALootBag()
-{
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
-
+void ALootBag::TickBuoyancy(float DeltaTime) {
 }
 
-// Called when the game starts or when spawned
-void ALootBag::BeginPlay()
-{
-	Super::BeginPlay();
-	
+void ALootBag::ResyncReplicationTransform() {
 }
 
-// Called every frame
-void ALootBag::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
+bool ALootBag::GetShouldShowHUDMarker_Implementation() const {
+    return false;
+}
 
+void ALootBag::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const {
+    Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+    
+    DOREPLIFETIME(ALootBag, OwnerPlayerGuid);
+    DOREPLIFETIME(ALootBag, OwnerName);
+    DOREPLIFETIME(ALootBag, DisplayName);
+}
+
+ALootBag::ALootBag() {
+    this->LiteData = NULL;
+    this->bOnlyAllowPreviousOwnerToLoot = false;
+    this->bAutoLootOnInteract = true;
+    this->bDestroyWhenEmpty = true;
+    this->InventoryComponent = CreateDefaultSubobject<UInventoryComponent>(TEXT("InventoryComponent"));
+    this->LootComponent = CreateDefaultSubobject<ULootComponent>(TEXT("LootComponent"));
+    this->PersistenceComponent = CreateDefaultSubobject<UPersistenceComponent>(TEXT("PersistenceComponent"));
+    this->ObsidianIDComponent = CreateDefaultSubobject<UObsidianIDComponent>(TEXT("ObsidianIDComponent"));
+    this->bUseBuoyancy = false;
 }
 

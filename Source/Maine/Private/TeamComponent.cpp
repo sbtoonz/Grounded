@@ -1,33 +1,39 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
-
 #include "TeamComponent.h"
 
-// Sets default values for this component's properties
-UTeamComponent::UTeamComponent()
-{
-	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
-	// off to improve performance if you don't need them.
-	PrimaryComponentTick.bCanEverTick = true;
-	// ...
+class UBaseLODActor;
+class AActor;
+
+void UTeamComponent::RestoreTeam() {
 }
 
-
-// Called when the game starts
-void UTeamComponent::BeginPlay()
-{
-	Super::BeginPlay();
-
-	// ...
-	
+void UTeamComponent::OnDeath(const FDamageInfo& DamageInfo) {
 }
 
+bool UTeamComponent::HasTeam() const {
+    return false;
+}
 
-// Called every frame
-void UTeamComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
-{
-	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
+TEnumAsByte<ETeamAttitude::Type> UTeamComponent::GetRelationshipToLODActor(const UBaseLODActor* Other) const {
+    return ETeamAttitude::Friendly;
+}
 
-	// ...
+TEnumAsByte<ETeamAttitude::Type> UTeamComponent::GetRelationship(const AActor* Other) const {
+    return ETeamAttitude::Friendly;
+}
+
+FDataTableRowHandle UTeamComponent::GetDefaultTeamRowHandle() const {
+    return FDataTableRowHandle{};
+}
+
+FDataTableRowHandle UTeamComponent::GetCurrentTeamRowHandle() const {
+    return FDataTableRowHandle{};
+}
+
+void UTeamComponent::ChangeTeam(FDataTableRowHandle NewTeamDataTable) {
+}
+
+UTeamComponent::UTeamComponent() {
+    this->bOverrideReputationOnDeath = false;
+    this->ReputationOnDeath = 0;
 }
 

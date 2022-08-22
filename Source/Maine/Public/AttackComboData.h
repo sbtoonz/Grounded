@@ -1,25 +1,22 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #pragma once
-
 #include "CoreMinimal.h"
-#include "Engine/DataTable.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataTableRowHandle -FallbackName=DataTableRowHandle
+//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
 #include "AttackComboData.generated.h"
 
-/**
- * 
- */
 USTRUCT(BlueprintType)
-struct MAINE_API FAttackComboData
-{
-	GENERATED_BODY()
-
+struct MAINE_API FAttackComboData {
+    GENERATED_BODY()
 public:
-
-	FAttackComboData();
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inventory")
-		TArray<FDataTableRowHandle> Attacks;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inventory")
-		bool bLoop;
+    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+    TArray<FDataTableRowHandle> Attacks;
+    
+    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+    bool bLoop;
+    
+    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+    FGameplayTag ScalingType;
+    
+    FAttackComboData();
 };
+

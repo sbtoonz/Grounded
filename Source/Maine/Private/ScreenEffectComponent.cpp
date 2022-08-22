@@ -1,34 +1,25 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
-
 #include "ScreenEffectComponent.h"
 
-// Sets default values for this component's properties
-UScreenEffectComponent::UScreenEffectComponent()
-{
-	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
-	// off to improve performance if you don't need them.
-	PrimaryComponentTick.bCanEverTick = true;
+class AActor;
+class UStatusEffect;
+class UScreenEffectData;
 
-	// ...
+void UScreenEffectComponent::OnStatusEffectRemoved(AActor* Owner, UStatusEffect* StatusEffect) {
 }
 
-
-// Called when the game starts
-void UScreenEffectComponent::BeginPlay()
-{
-	Super::BeginPlay();
-
-	// ...
-	
+void UScreenEffectComponent::OnStatusEffectAdded(AActor* Owner, UStatusEffect* StatusEffect) {
 }
 
+void UScreenEffectComponent::EndScreenEffect(UScreenEffectData* ScreenEffectData) {
+}
 
-// Called every frame
-void UScreenEffectComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
-{
-	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
+void UScreenEffectComponent::BeginScreenEffectWithDirection(UScreenEffectData* ScreenEffectData, FVector Direction) {
+}
 
-	// ...
+void UScreenEffectComponent::BeginScreenEffect(UScreenEffectData* ScreenEffectData) {
+}
+
+UScreenEffectComponent::UScreenEffectComponent() {
+    this->OwnerCharacter = NULL;
 }
 

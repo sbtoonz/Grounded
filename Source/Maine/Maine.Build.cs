@@ -1,25 +1,54 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 using UnrealBuildTool;
 
-public class Maine : ModuleRules
-{
-	public Maine(ReadOnlyTargetRules Target) : base(Target)
-	{
-		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
-	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "OEICommon", "GameplayTags", "AIModule", "NavigationSystem" });
-
-		PrivateDependencyModuleNames.AddRange(new string[] {  });
-
-		// Uncomment if you are using Slate UI
-		// PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });
-
-		// Uncomment if you are using online features
-		// PrivateDependencyModuleNames.Add("OnlineSubsystem");
-
-		// To include OnlineSubsystemSteam, add it to the plugins section in your uproject file with the Enabled attribute set to true
-
-		PublicIncludePaths.AddRange(new string[] { "OEICommon/Public" });
-	}
+public class Maine : ModuleRules {
+    public Maine(ReadOnlyTargetRules Target) : base(Target) {
+        PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
+        bLegacyPublicIncludePaths = false;
+        ShadowVariableWarningLevel = WarningLevel.Warning;
+        
+        PublicDependencyModuleNames.AddRange(new string[] {
+            "AIModule",
+            "AudioMixer",
+            "BinkMediaPlayer",
+            "Chaos",
+            "CinematicCamera",
+            "Core",
+            "CoreUObject",
+            "DeveloperSettings",
+            "Engine",
+            "Foliage",
+            "GameTelemetry",
+            "GameplayTags",
+            "GameplayTasks",
+            "InputCore",
+            "InterfaceNarration",
+            "LevelSequence",
+            "MediaAssets",
+            "MediaUtils",
+            "MovieScene",
+            "MovieSceneTracks",
+            "NavigationSystem",
+            "Niagara",
+            "NiagaraCore",
+            "NiagaraShader",
+            "OEICommon",
+            "OEIFlowCharts",
+            "OEIGlobalVariables",
+            "OEIMoviePlayer",
+            "OEIOnlineSubsystemUtils",
+            "OEIPhotoMode",
+            "OEIScripting",
+            "OEIText",
+            "OEIVoiceOver",
+            "OnlineSubsystem",
+            "OnlineSubsystemUtils",
+            "PhysicsCore",
+            "PropertyPath",
+            "ReplicationGraph",
+            "Slate",
+            "SlateCore",
+            "UMG",
+            "WebBrowserWidget",
+        });
+    }
 }

@@ -1,38 +1,44 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #pragma once
-
 #include "CoreMinimal.h"
-#include "GameplayTagContainer.h"
-#include <EInteractAnimType.h>
+//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
+#include "ItemPowerConversion.h"
+#include "EInteractAnimType.h"
 #include "ItemPowerData.generated.h"
 
-/**
- * 
- */
 USTRUCT(BlueprintType)
-struct MAINE_API FItemPowerData
-{
-	GENERATED_BODY()
-
+struct FItemPowerData {
+    GENERATED_BODY()
 public:
-
-	FItemPowerData();
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inventory")
-		bool UsesPower;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inventory")
-		bool AlwaysOn;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inventory")
-		bool bConsumesPowerDuringRest;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inventory")
-		FGameplayTag UsesPowerType;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inventory")
-		FGameplayTag ProvidesPower;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inventory")
-		float TotalPowerTimeInHours;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inventory")
-		float TotalCharges;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inventory")
-		EInteractAnimType ChargingAnimType;
-
+    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+    uint8 UsesPower: 1;
+    
+    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+    uint8 AlwaysOn: 1;
+    
+    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+    uint8 bConsumesPowerDuringRest: 1;
+    
+    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+    uint8 bCanBeUsedInWater: 1;
+    
+    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+    FGameplayTag UsesPowerType;
+    
+    UPROPERTY(EditDefaultsOnly)
+    TArray<FItemPowerConversion> PowerConversions;
+    
+    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+    FGameplayTag ProvidesPower;
+    
+    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+    float TotalPowerTimeInHours;
+    
+    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+    float TotalCharges;
+    
+    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+    EInteractAnimType ChargingAnimType;
+    
+    MAINE_API FItemPowerData();
 };
+

@@ -1,10 +1,10 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
-
 #include "BreathSettings.h"
 
-FBreathSettings::FBreathSettings()
-{
-	AdjustmentPerSecond = 0.0f;
-	RegenPerSecond = 0.0f;
+FBreathSettings::FBreathSettings() {
+    this->MaxValue = 0.00f;
+    this->AdjustmentPerSecond = 0.00f;
+    this->RegenPerSecond = 0.00f;
+    this->OutOfBreathAlertTime = 0;
+    this->RunningOutOfBreathEffectTime = 0;
 }
+

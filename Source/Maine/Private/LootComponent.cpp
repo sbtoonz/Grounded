@@ -1,34 +1,57 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
-
 #include "LootComponent.h"
+#include "Net/UnrealNetwork.h"
 
-// Sets default values for this component's properties
-ULootComponent::ULootComponent()
-{
-	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
-	// off to improve performance if you don't need them.
-	PrimaryComponentTick.bCanEverTick = true;
+class AActor;
+class UHealthComponent;
+class UObject;
+class USceneComponent;
+class AController;
+class UBaseLODActor;
+class USurvivalGameInstance;
+class UGoapAction;
 
-	// ...
+void ULootComponent::StartCacheSpawnPointVelocities() {
 }
 
-
-// Called when the game starts
-void ULootComponent::BeginPlay()
-{
-	Super::BeginPlay();
-
-	// ...
-	
+void ULootComponent::SpawnLoot(AActor* Looter, ELootSpawnType SpawnType) {
 }
 
+void ULootComponent::SetSpawnPointForItem(USceneComponent* SpawnPoint, int32 ItemIndex) {
+}
 
-// Called every frame
-void ULootComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
-{
-	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
+void ULootComponent::SetAllDropChanceMultipliers(float Value) {
+}
 
-	// ...
+void ULootComponent::OnDecayed(UHealthComponent* Sender) {
+}
+
+void ULootComponent::OnDeath(const FDamageInfo& DamageInfo) {
+}
+
+void ULootComponent::OnDamaged(float Damage, const FDamageInfo& DamageInfo, AController* InstigatedBy, UBaseLODActor* DamageCauser, bool IsKillingBlow) {
+}
+
+bool ULootComponent::CanDropItem(const FDataTableRowHandle& ItemType) const {
+    return false;
+}
+
+TArray<UGoapAction*> ULootComponent::AllocateGOAPActions_Implementation(USurvivalGameInstance* GameInstance, UObject* InOwner) {
+    return TArray<UGoapAction*>();
+}
+
+void ULootComponent::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const {
+    Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+    
+    DOREPLIFETIME(ULootComponent, bInteractable);
+    DOREPLIFETIME(ULootComponent, bForceGiveBestiaryLootIfLastOfActorClass);
+}
+
+ULootComponent::ULootComponent() {
+    this->OnLootSpawnSFX = NULL;
+    this->bDestroyBody = false;
+    this->InteractDelayOnDeath = 1.00f;
+    this->TemplateHarvestAction = NULL;
+    this->bInteractable = false;
+    this->bForceGiveBestiaryLootIfLastOfActorClass = false;
 }
 

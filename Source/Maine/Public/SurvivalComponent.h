@@ -1,71 +1,173 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #pragma once
-
 #include "CoreMinimal.h"
-#include "Components/ActorComponent.h"
-#include "HungerSettings.h"
-#include "ThirstSettings.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
+#include "SurvivalTraitSettings.h"
 #include "BreathSettings.h"
+#include "OnSurvivalStatChangedDelegate.h"
+#include "PersistentInterface.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=RuntimeFloatCurve -FallbackName=RuntimeFloatCurve
+#include "OnSurvivalStatImprovedDelegate.h"
 #include "SurvivalComponent.generated.h"
 
+class UStatusEffect;
+class UOverTimeEffect;
 
-UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
-class MAINE_API USurvivalComponent : public UActorComponent
-{
-	GENERATED_BODY()
-
-public:	
-	// Sets default values for this component's properties
-	USurvivalComponent();
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "SurvivalComponent")
-		FHungerSettings HungerSettings;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "SurvivalComponent")
-		FThirstSettings ThirstSettings;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "SurvivalComponent")
-		FBreathSettings BreathSettings;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "SurvivalComponent")
-		float CurrentBreath;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "SurvivalComponent")
-		float CurrentWater;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "SurvivalComponent")
-		float CurrentFood;
-
-	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "SurvivalComponent")
-		float GetBreathAdjustmentRate();
-	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "SurvivalComponent")
-		float GetBreathRatio();
-	UFUNCTION(BlueprintCallable, Category = "SurvivalComponent")
-		void RestoreBreath(float BreathAmount);
-	UFUNCTION(BlueprintCallable, Category = "SurvivalComponent")
-		void SetCurrentBreath(float NewBreath);
-	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "SurvivalComponent")
-		bool IsFullBreath();
-	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "SurvivalComponent")
-		float GetHungerRatio();
-	UFUNCTION(BlueprintCallable, Category = "SurvivalComponent")
-		void SetCurrentFood(float NewFood);
-	UFUNCTION(BlueprintCallable, Category = "SurvivalComponent")
-		void AddFood(float FoodAmount);
-	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "SurvivalComponent")
-		float GetThirstRatio();
-	UFUNCTION(BlueprintCallable, Category = "SurvivalComponent")
-		void SetCurrentWater(float NewWater);
-	UFUNCTION(BlueprintCallable, Category = "SurvivalComponent")
-		void AddWater(float WaterAmount);
-
-
-	UFUNCTION(BlueprintCallable, Category = "SurvivalComponent")
-		void Rest(float RestDuration);
-
+UCLASS(BlueprintType, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
+class MAINE_API USurvivalComponent : public UActorComponent, public IPersistentInterface {
+    GENERATED_BODY()
+public:
+    UPROPERTY(BlueprintAssignable)
+    FOnSurvivalStatChanged OnFoodChanged;
+    
+    UPROPERTY(BlueprintAssignable)
+    FOnSurvivalStatChanged OnWaterChanged;
+    
 protected:
-	// Called when the game starts
-	virtual void BeginPlay() override;
-
-public:	
-	// Called every frame
-	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
-
+    UPROPERTY(EditAnywhere)
+    FSurvivalTraitSettings HungerSettings;
+    
+    UPROPERTY(EditAnywhere)
+    FSurvivalTraitSettings ThirstSettings;
+    
+    UPROPERTY(EditAnywhere)
+    FBreathSettings BreathSettings;
+    
+    UPROPERTY(Transient, VisibleInstanceOnly, ReplicatedUsing=OnRep_CurrentFood)
+    float CurrentFood;
+    
+    UPROPERTY(Transient, VisibleInstanceOnly, ReplicatedUsing=OnRep_CurrentWater)
+    float CurrentWater;
+    
+    UPROPERTY(Replicated, Transient, VisibleInstanceOnly)
+    float CurrentBreath;
+    
+    UPROPERTY(EditAnywhere)
+    float MinimumRestPercentage;
+    
+    UPROPERTY(EditAnywhere)
+    float RestRateMultiplier;
+    
+    UPROPERTY(EditAnywhere)
+    bool bKillOnEmptyFoodOrWater;
+    
+    UPROPERTY(BlueprintReadOnly, EditAnywhere)
+    float DeathDelayTime;
+    
+    UPROPERTY(Replicated, Transient)
+    float DeathTimer;
+    
+    UPROPERTY(EditAnywhere)
+    FRuntimeFloatCurve DeathVignetteIntensityCurve;
+    
+    UPROPERTY(BlueprintAssignable)
+    FOnSurvivalStatImproved OnRest;
+    
+private:
+    UPROPERTY(Transient)
+    UOverTimeEffect* PassiveHungerEffect;
+    
+    UPROPERTY(Transient)
+    UOverTimeEffect* PassiveThirstEffect;
+    
+    UPROPERTY(Transient)
+    UStatusEffect* HungerDamageEffect;
+    
+    UPROPERTY(Transient)
+    UStatusEffect* HungerBonusEffect;
+    
+    UPROPERTY(Transient)
+    UStatusEffect* ThirstDamageEffect;
+    
+    UPROPERTY(Transient)
+    UStatusEffect* ThirstBonusEffect;
+    
+    UPROPERTY(Transient)
+    UStatusEffect* BreathDamageEffect;
+    
+public:
+    USurvivalComponent();
+    virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
+    
+    UFUNCTION(BlueprintCallable, Exec)
+    void SetCurrentWater(float NewWaterLevel);
+    
+    UFUNCTION(BlueprintCallable, Exec)
+    void SetCurrentSizzle(float NewSizzle);
+    
+    UFUNCTION(BlueprintCallable, Exec)
+    void SetCurrentFood(float NewFoodLevel);
+    
+    UFUNCTION(BlueprintCallable, Exec)
+    void SetCurrentBreath(float NewBreath);
+    
+    UFUNCTION(BlueprintCallable)
+    void RestoreBreath(float BreathAmount);
+    
+    UFUNCTION(BlueprintCallable)
+    void RestoreAll();
+    
+private:
+    UFUNCTION()
+    void Rest(float RestDuration);
+    
+    UFUNCTION()
+    void OnStatusEffectsChanged();
+    
+protected:
+    UFUNCTION()
+    void OnRep_CurrentWater(float PrevWater);
+    
+    UFUNCTION()
+    void OnRep_CurrentFood(float PrevFood);
+    
+private:
+    UFUNCTION()
+    void OnGameModeChanged();
+    
+public:
+    UFUNCTION(BlueprintPure)
+    bool IsFullBreath() const;
+    
+    UFUNCTION(BlueprintPure)
+    bool IsFoodOrWaterEmpty() const;
+    
+    UFUNCTION(BlueprintPure)
+    float GetThirstRatio() const;
+    
+    UFUNCTION(BlueprintPure)
+    float GetHungerRatio() const;
+    
+    UFUNCTION(BlueprintPure)
+    float GetDeathSecondsTimerRatio() const;
+    
+    UFUNCTION(BlueprintPure)
+    int32 GetDeathSecondsLeft() const;
+    
+    UFUNCTION(BlueprintPure)
+    float GetCurrentSizzleRatio() const;
+    
+    UFUNCTION(BlueprintPure)
+    int32 GetBreathSecondsLeft() const;
+    
+    UFUNCTION(BlueprintPure)
+    float GetBreathRatio() const;
+    
+    UFUNCTION(BlueprintPure)
+    int32 GetBreathAlertTime() const;
+    
+    UFUNCTION(BlueprintPure)
+    float GetBreathAdjustmentRate() const;
+    
+    UFUNCTION(BlueprintPure)
+    bool CanBreathe() const;
+    
+    UFUNCTION(BlueprintCallable, Exec)
+    void AddWater(float WaterAmount);
+    
+    UFUNCTION(BlueprintCallable, Exec)
+    void AddFood(float FoodAmount);
+    
+    
+    // Fix for true pure virtual functions not being implemented
 };
+

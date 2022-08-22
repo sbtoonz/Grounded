@@ -1,33 +1,36 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #pragma once
-
 #include "CoreMinimal.h"
-#include <EGlidingStyle.h>
+#include "EGlidingStyle.h"
 #include "GlidingData.generated.h"
 
-/**
- * 
- */
 USTRUCT(BlueprintType)
-struct MAINE_API FGlidingData
-{
-	GENERATED_BODY()
-
+struct FGlidingData {
+    GENERATED_BODY()
 public:
-
-	FGlidingData();
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inventory")
-		EGlidingStyle Style;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inventory")
-		float StaminaDrainPerSecond;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inventory")
-		float ForwardAcceleration;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inventory")
-		float MaxForwardVelocity;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inventory")
-		float DescendSpeed;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inventory")
-		float DescendDrag;
+    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+    EGlidingStyle Style;
+    
+    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+    float StaminaDrainPerSecond;
+    
+    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+    float ForwardAcceleration;
+    
+    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+    float MaxForwardVelocity;
+    
+    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+    float DescendSpeed;
+    
+    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+    float DescendDrag;
+    
+    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+    float LiftAcceleration;
+    
+    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+    uint8 bUseWhileSwimming: 1;
+    
+    MAINE_API FGlidingData();
 };
+

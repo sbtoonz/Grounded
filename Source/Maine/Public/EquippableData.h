@@ -1,39 +1,44 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #pragma once
-
 #include "CoreMinimal.h"
-#include "GameplayTagContainer.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
 #include "RecipeRequirements.h"
-#include "Sound/SoundWave.h"
-#include "Engine/DataTable.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataTableRowHandle -FallbackName=DataTableRowHandle
 #include "EquippableData.generated.h"
 
-/**
- * 
- */
+class USoundCue;
+class UAnimMontage;
+
 USTRUCT(BlueprintType)
-struct MAINE_API FEquippableData
-{
-	GENERATED_USTRUCT_BODY()
-
+struct FEquippableData {
+    GENERATED_BODY()
 public:
-
-	FEquippableData()
-		: Durability (0.0f)
-	{}
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inventory")
-		USoundWave* EquipAudio;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inventory")
-		float Durability;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inventory")
-		float DamageReduction;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inventory")
-		TArray<FDataTableRowHandle> StatusEffects;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inventory")
-		TArray<FRecipeRequirements> RepairRecipe;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inventory")
-		FGameplayTag HairType;
-
+    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+    USoundCue* EquipAudio;
+    
+    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+    UAnimMontage* EquipAnim;
+    
+    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+    float Durability;
+    
+    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+    float FlatDamageReduction;
+    
+    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+    float PercentageDamageReduction;
+    
+    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+    TArray<FDataTableRowHandle> StatusEffects;
+    
+    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+    TArray<FDataTableRowHandle> HiddenStatusEffects;
+    
+    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+    TArray<FRecipeRequirements> RepairRecipe;
+    
+    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+    FGameplayTag HairType;
+    
+    MAINE_API FEquippableData();
 };
+

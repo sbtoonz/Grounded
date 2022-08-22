@@ -1,34 +1,35 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
-
 #include "AttractionComponent.h"
 
-// Sets default values for this component's properties
-UAttractionComponent::UAttractionComponent()
-{
-	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
-	// off to improve performance if you don't need them.
-	PrimaryComponentTick.bCanEverTick = true;
+class UCharacterLODActor;
+class UGoapAction;
 
-	// ...
+FColonyIdentifier UAttractionComponent::GetRestrictedToColonyId() const {
+    return FColonyIdentifier{};
 }
 
-
-// Called when the game starts
-void UAttractionComponent::BeginPlay()
-{
-	Super::BeginPlay();
-
-	// ...
-	
+UClass* UAttractionComponent::GetLODComponentClass_Implementation() const {
+    return NULL;
 }
 
+TArray<UGoapAction*> UAttractionComponent::GetAdvertisedActions() const {
+    return TArray<UGoapAction*>();
+}
 
-// Called every frame
-void UAttractionComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
-{
-	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
+bool UAttractionComponent::CanColonyUse(const FColonyIdentifier& ColonyIdentifier) const {
+    return false;
+}
 
-	// ...
+bool UAttractionComponent::CanCharacterUse(const UCharacterLODActor* Character) const {
+    return false;
+}
+
+UAttractionComponent::UAttractionComponent() {
+    this->AreaRadius = 0.00f;
+    this->SlotCount = -1;
+    this->RestrictedToClassLiteData = NULL;
+    this->bProjectToGround = false;
+    this->bForceNoTrack = false;
+    this->bForceRuntimeActionAlloc = false;
+    this->GeneratedLocationType = EGeneratedLocationType::NavMesh;
 }
 

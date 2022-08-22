@@ -1,34 +1,12 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
-
 #include "FoliageDisplacerComponent.h"
 
-// Sets default values for this component's properties
-UFoliageDisplacerComponent::UFoliageDisplacerComponent()
-{
-	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
-	// off to improve performance if you don't need them.
-	PrimaryComponentTick.bCanEverTick = true;
-
-	// ...
-}
-
-
-// Called when the game starts
-void UFoliageDisplacerComponent::BeginPlay()
-{
-	Super::BeginPlay();
-
-	// ...
-	
-}
-
-
-// Called every frame
-void UFoliageDisplacerComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
-{
-	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
-
-	// ...
+UFoliageDisplacerComponent::UFoliageDisplacerComponent() {
+    this->Radius = 400.00f;
+    this->RegisterRadius = 400.00f;
+    this->VelocityCompensationMultiplier = 1.00f;
+    this->MaxVelocityCompensation = 0.00f;
+    this->SpeedAudioSmoothingSpeed = 800.00f;
+    this->EnergyAudioSmoothingSpeed = 8.00f;
+    this->SwapLevel = EFoliageSwapLevel::Player;
 }
 

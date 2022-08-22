@@ -1,25 +1,18 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #pragma once
-
 #include "CoreMinimal.h"
-#include "Engine/DataTable.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataTableRowHandle -FallbackName=DataTableRowHandle
 #include "AttackAmmoData.generated.h"
 
-/**
- * 
- */
 USTRUCT(BlueprintType)
-struct MAINE_API FAttackAmmoData
-{
-	GENERATED_BODY()
-
+struct MAINE_API FAttackAmmoData {
+    GENERATED_BODY()
 public:
-
-	FAttackAmmoData();
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inventory")
-		TArray<FDataTableRowHandle> AmmoItem;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inventory")
-		TArray<FDataTableRowHandle> Attack;
+    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+    FDataTableRowHandle AmmoItem;
+    
+    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+    FDataTableRowHandle Attack;
+    
+    FAttackAmmoData();
 };
+

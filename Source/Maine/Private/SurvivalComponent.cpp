@@ -1,49 +1,117 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
-
 #include "SurvivalComponent.h"
+#include "Net/UnrealNetwork.h"
 
-// Sets default values for this component's properties
-USurvivalComponent::USurvivalComponent()
-{
-	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
-	// off to improve performance if you don't need them.
-	PrimaryComponentTick.bCanEverTick = true;
-	HungerSettings = FHungerSettings();
-	ThirstSettings = FThirstSettings();
-	BreathSettings = FBreathSettings();
-	CurrentBreath = 0.0f;
-	CurrentWater = 0.0f;
-	CurrentFood = 0.0f;
+void USurvivalComponent::SetCurrentWater(float NewWaterLevel) {
 }
 
-
-// Called when the game starts
-void USurvivalComponent::BeginPlay()
-{
-	Super::BeginPlay();
-
-	// ...
-	
+void USurvivalComponent::SetCurrentSizzle(float NewSizzle) {
 }
 
-
-// Called every frame
-void USurvivalComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
-{
-	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
-
+void USurvivalComponent::SetCurrentFood(float NewFoodLevel) {
 }
 
-float USurvivalComponent::GetBreathAdjustmentRate() { return 0.0f; }
-float USurvivalComponent::GetBreathRatio() { return 0.0f; }
-void USurvivalComponent::RestoreBreath(float BreathAmount) { }
-void USurvivalComponent::SetCurrentBreath(float NewBreath) { }
-bool USurvivalComponent::IsFullBreath() { return true; }
-float USurvivalComponent::GetHungerRatio() { return 0.0f; }
-void USurvivalComponent::SetCurrentFood(float NewFood) { }
-void USurvivalComponent::AddFood(float FoodAmount) { }
-float USurvivalComponent::GetThirstRatio() { return 0.0f; }
-void USurvivalComponent::SetCurrentWater(float NewWater) {  }
-void USurvivalComponent::AddWater(float WaterAmount) { }
-void USurvivalComponent::Rest(float RestDuration) {  }
+void USurvivalComponent::SetCurrentBreath(float NewBreath) {
+}
+
+void USurvivalComponent::RestoreBreath(float BreathAmount) {
+}
+
+void USurvivalComponent::RestoreAll() {
+}
+
+void USurvivalComponent::Rest(float RestDuration) {
+}
+
+void USurvivalComponent::OnStatusEffectsChanged() {
+}
+
+void USurvivalComponent::OnRep_CurrentWater(float PrevWater) {
+}
+
+void USurvivalComponent::OnRep_CurrentFood(float PrevFood) {
+}
+
+void USurvivalComponent::OnGameModeChanged() {
+}
+
+bool USurvivalComponent::IsFullBreath() const {
+    return false;
+}
+
+bool USurvivalComponent::IsFoodOrWaterEmpty() const {
+    return false;
+}
+
+float USurvivalComponent::GetThirstRatio() const {
+    return 0.0f;
+}
+
+float USurvivalComponent::GetHungerRatio() const {
+    return 0.0f;
+}
+
+float USurvivalComponent::GetDeathSecondsTimerRatio() const {
+    return 0.0f;
+}
+
+int32 USurvivalComponent::GetDeathSecondsLeft() const {
+    return 0;
+}
+
+float USurvivalComponent::GetCurrentSizzleRatio() const {
+    return 0.0f;
+}
+
+int32 USurvivalComponent::GetBreathSecondsLeft() const {
+    return 0;
+}
+
+float USurvivalComponent::GetBreathRatio() const {
+    return 0.0f;
+}
+
+int32 USurvivalComponent::GetBreathAlertTime() const {
+    return 0;
+}
+
+float USurvivalComponent::GetBreathAdjustmentRate() const {
+    return 0.0f;
+}
+
+bool USurvivalComponent::CanBreathe() const {
+    return false;
+}
+
+void USurvivalComponent::AddWater(float WaterAmount) {
+}
+
+void USurvivalComponent::AddFood(float FoodAmount) {
+}
+
+void USurvivalComponent::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const {
+    Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+    
+    DOREPLIFETIME(USurvivalComponent, CurrentFood);
+    DOREPLIFETIME(USurvivalComponent, CurrentWater);
+    DOREPLIFETIME(USurvivalComponent, CurrentBreath);
+    DOREPLIFETIME(USurvivalComponent, DeathTimer);
+}
+
+USurvivalComponent::USurvivalComponent() {
+    this->CurrentFood = 50.00f;
+    this->CurrentWater = 50.00f;
+    this->CurrentBreath = 100.00f;
+    this->MinimumRestPercentage = 0.10f;
+    this->RestRateMultiplier = 0.25f;
+    this->bKillOnEmptyFoodOrWater = false;
+    this->DeathDelayTime = 10.00f;
+    this->DeathTimer = 0.00f;
+    this->PassiveHungerEffect = NULL;
+    this->PassiveThirstEffect = NULL;
+    this->HungerDamageEffect = NULL;
+    this->HungerBonusEffect = NULL;
+    this->ThirstDamageEffect = NULL;
+    this->ThirstBonusEffect = NULL;
+    this->BreathDamageEffect = NULL;
+}
+

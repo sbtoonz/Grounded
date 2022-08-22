@@ -1,28 +1,34 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #pragma once
-
 #include "CoreMinimal.h"
-#include "Components/SceneComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SceneComponent -FallbackName=SceneComponent
+#include "EFoliageSwapLevel.h"
 #include "FoliageDisplacerComponent.generated.h"
 
-
-UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
-class MAINE_API UFoliageDisplacerComponent : public USceneComponent
-{
-	GENERATED_BODY()
-
-public:	
-	// Sets default values for this component's properties
-	UFoliageDisplacerComponent();
-
-protected:
-	// Called when the game starts
-	virtual void BeginPlay() override;
-
-public:	
-	// Called every frame
-	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
-
-		
+UCLASS(BlueprintType, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
+class MAINE_API UFoliageDisplacerComponent : public USceneComponent {
+    GENERATED_BODY()
+public:
+    UPROPERTY(BlueprintReadWrite, EditAnywhere)
+    float Radius;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere)
+    float RegisterRadius;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere)
+    float VelocityCompensationMultiplier;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere)
+    float MaxVelocityCompensation;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere)
+    float SpeedAudioSmoothingSpeed;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere)
+    float EnergyAudioSmoothingSpeed;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere)
+    EFoliageSwapLevel SwapLevel;
+    
+    UFoliageDisplacerComponent();
 };
+

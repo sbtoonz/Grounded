@@ -1,34 +1,56 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
-
 #include "BlockComponent.h"
+#include "Net/UnrealNetwork.h"
 
-// Sets default values for this component's properties
-UBlockComponent::UBlockComponent()
-{
-	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
-	// off to improve performance if you don't need them.
-	PrimaryComponentTick.bCanEverTick = true;
+class UItem;
 
-	// ...
+void UBlockComponent::OnStatusEffectsChanged() {
 }
 
-
-// Called when the game starts
-void UBlockComponent::BeginPlay()
-{
-	Super::BeginPlay();
-
-	// ...
-	
+void UBlockComponent::OnRep_IsBlocking() {
 }
 
+void UBlockComponent::MulticastPlayBlockEffects_Implementation(EBlockType BlockType) {
+}
 
-// Called every frame
-void UBlockComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
-{
-	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
+bool UBlockComponent::IsBlocking() const {
+    return false;
+}
 
-	// ...
+float UBlockComponent::GetMaxBlockMeter() const {
+    return 0.0f;
+}
+
+float UBlockComponent::GetBlockMeter() const {
+    return 0.0f;
+}
+
+UItem* UBlockComponent::GetBlockItem() const {
+    return NULL;
+}
+
+void UBlockComponent::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const {
+    Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+    
+    DOREPLIFETIME(UBlockComponent, bIsBlocking);
+}
+
+UBlockComponent::UBlockComponent() {
+    this->bIsBlocking = false;
+    this->bWantsToBlock = false;
+    this->DefaultBlockAnim = NULL;
+    this->BlockAngle = 360.00f;
+    this->DefaultBlockDamageMultiplier = 0.00f;
+    this->PerfectBlockDamageMultiplier = 0.00f;
+    this->PerfectBlockWindow = 1.00f;
+    this->PerfectBlockStunRefundPercentage = 0.25f;
+    this->PerfectBlockAttack = NULL;
+    this->DefaultBlockSound = NULL;
+    this->DefaultPerfectBlockSound = NULL;
+    this->LowDurabilityBlockSound = NULL;
+    this->LowDurabilityThreshold = 0.25f;
+    this->BlockEffect = NULL;
+    this->PerfectBlockEffect = NULL;
+    this->OffhandBlockEffect = NULL;
+    this->OffhandPerfectBlockEffect = NULL;
 }
 

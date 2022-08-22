@@ -1,34 +1,71 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
-
 #include "ReactionComponent.h"
+#include "Net/UnrealNetwork.h"
 
-// Sets default values for this component's properties
-UReactionComponent::UReactionComponent()
-{
-	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
-	// off to improve performance if you don't need them.
-	PrimaryComponentTick.bCanEverTick = true;
+class AController;
+class UBaseLODActor;
+class ACharacter;
 
-	// ...
+void UReactionComponent::OnRep_StunState(EStunState PrevStunState) {
 }
 
-
-// Called when the game starts
-void UReactionComponent::BeginPlay()
-{
-	Super::BeginPlay();
-
-	// ...
-	
+void UReactionComponent::OnHit(float Damage, const FDamageInfo& DamageInfo, AController* InstigatedBy, UBaseLODActor* DamageCauser, bool IsKillingBlow) {
 }
 
+void UReactionComponent::OnHealthStateChanged(EHealthState NewHealthState) {
+}
 
-// Called every frame
-void UReactionComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
-{
-	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
+void UReactionComponent::OnCharacterMovementChanged(ACharacter* Character, TEnumAsByte<EMovementMode> PrevMovementMode, uint8 PreviousCustomMode) {
+}
 
-	// ...
+bool UReactionComponent::IsStunned() const {
+    return false;
+}
+
+EStunState UReactionComponent::GetStunState() const {
+    return EStunState::None;
+}
+
+float UReactionComponent::GetStunRatio() const {
+    return 0.0f;
+}
+
+float UReactionComponent::GetStunDuration() const {
+    return 0.0f;
+}
+
+float UReactionComponent::GetMaxStun() const {
+    return 0.0f;
+}
+
+bool UReactionComponent::CanBeStunned() const {
+    return false;
+}
+
+void UReactionComponent::BeginStun() {
+}
+
+void UReactionComponent::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const {
+    Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+    
+    DOREPLIFETIME(UReactionComponent, CurrentStunValue);
+    DOREPLIFETIME(UReactionComponent, StunState);
+}
+
+UReactionComponent::UReactionComponent() {
+    this->CurrentStunValue = 0.00f;
+    this->MaxStunValue = 0.00f;
+    this->StunDecayRate = 0.00f;
+    this->StunDuration = 0.00f;
+    this->StunCooldown = 0.00f;
+    this->bOnlyStunFromBlocks = false;
+    this->bOnlyStunWhileFlying = false;
+    this->bFlinchOnTakeDamageDuringStun = true;
+    this->StunState = EStunState::None;
+    this->StaggerThreshold = 5;
+    this->FlinchAnim = NULL;
+    this->StunAnim = NULL;
+    this->StaggerAnim = NULL;
+    this->Capture = NULL;
+    this->StunEffect = NULL;
 }
 

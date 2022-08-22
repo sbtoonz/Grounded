@@ -1,27 +1,19 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #pragma once
-
 #include "CoreMinimal.h"
-#include <ESpoilState.h>
-#include "Engine/DataTable.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataTableRowHandle -FallbackName=DataTableRowHandle
+#include "ESpoilState.h"
 #include "SpoilData.generated.h"
 
-/**
- * 
- */
 USTRUCT(BlueprintType)
-struct MAINE_API FSpoilData
-{
-	GENERATED_BODY()
-
+struct FSpoilData {
+    GENERATED_BODY()
 public:
-
-	FSpoilData();
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inventory")
-		ESpoilState SpoilState;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inventory")
-		FDataTableRowHandle SpoiledResultItem;
-
+    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+    ESpoilState SpoilState;
+    
+    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+    FDataTableRowHandle SpoiledResultItem;
+    
+    MAINE_API FSpoilData();
 };
+
