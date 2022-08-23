@@ -10,7 +10,7 @@ public class OEICommon : ModuleRules {
             "Core",
             "CoreUObject",
             "DeveloperSettings",
-            "Engine",
+            "Engine"
         });
     }
 }

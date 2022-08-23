@@ -10,7 +10,7 @@ public class OEIText : ModuleRules {
             "Core",
             "CoreUObject",
             "DeveloperSettings",
-            "Engine",
+            "Engine", 
             "OEICommon",
         });
     }

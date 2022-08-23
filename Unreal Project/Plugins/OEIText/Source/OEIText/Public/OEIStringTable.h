@@ -2,6 +2,7 @@
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=OEICommon -ObjectName=IDSet -FallbackName=IDSet
 #include "IDSet.h"
+#include "IDSet.h"
 #include "OEIStringEntry.h"
 #include "OEIStringTable.generated.h"
 

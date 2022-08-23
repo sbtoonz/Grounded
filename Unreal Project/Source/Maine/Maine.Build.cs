@@ -21,6 +21,6 @@ public class Maine : ModuleRules
 
 		// To include OnlineSubsystemSteam, add it to the plugins section in your uproject file with the Enabled attribute set to true
 
-		PublicIncludePaths.AddRange(new string[] { "OEICommon/Public" });
+		PublicIncludePaths.AddRange(new string[] { "../Plugins/OEICommon/Source/OEICommon/Public" });
 	}
 }
