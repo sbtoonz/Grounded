@@ -1,5 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "LocString.h"
 #include "Templates/SubclassOf.h"
 #include "LocString.h"
 #include "Engine/DataTable.h"

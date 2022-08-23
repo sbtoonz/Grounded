@@ -1,28 +1,30 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #pragma once
-
 #include "CoreMinimal.h"
-#include "Components/ActorComponent.h"
+//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
+//CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 #include "ObsidianIDComponent.generated.h"
 
-
-UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
-class OEICOMMON_API UObsidianIDComponent : public UActorComponent
-{
-	GENERATED_BODY()
-
-public:	
-	// Sets default values for this component's properties
-	UObsidianIDComponent();
-
+UCLASS(BlueprintType, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
+class OEICOMMON_API UObsidianIDComponent : public UActorComponent {
+    GENERATED_BODY()
+public:
 protected:
-	// Called when the game starts
-	virtual void BeginPlay() override;
-
-public:	
-	// Called every frame
-	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
-
-		
+    UPROPERTY(VisibleAnywhere)
+    FGuid ID;
+    
+    UPROPERTY(EditAnywhere)
+    int32 DataTag;
+    
+    UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
+    bool bIgnoreSavingOfDestruction;
+    
+    UPROPERTY(VisibleDefaultsOnly)
+    bool bInstancesShareSavedState;
+    
+public:
+    UObsidianIDComponent();
+    UFUNCTION(BlueprintCallable)
+    void ResetID();
+    
 };
+
