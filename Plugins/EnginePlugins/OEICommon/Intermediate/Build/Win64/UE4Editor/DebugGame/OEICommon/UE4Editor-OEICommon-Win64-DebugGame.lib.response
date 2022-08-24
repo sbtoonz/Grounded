@@ -1,0 +1,13 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-OEICommon-Win64-DebugGame.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\UnrealTest\Test\Intermediate\Build\Win64\MaineEditor\DebugGame\Engine\SharedPCH.Engine.NonOptimized.h.obj"
+"D:\UnrealTest\Test\Plugins\EnginePlugins\OEICommon\Intermediate\Build\Win64\UE4Editor\DebugGame\OEICommon\Module.OEICommon.cpp.obj"
+"D:\UnrealTest\Test\Plugins\EnginePlugins\OEICommon\Intermediate\Build\Win64\UE4Editor\DebugGame\OEICommon\Module.OEICommon.gen.cpp.obj"
+"D:\UnrealTest\Test\Plugins\EnginePlugins\OEICommon\Intermediate\Build\Win64\UE4Editor\DebugGame\OEICommon\Default.rc2.res"
+/OUT:"D:\UnrealTest\Test\Plugins\EnginePlugins\OEICommon\Intermediate\Build\Win64\UE4Editor\DebugGame\OEICommon\UE4Editor-OEICommon-Win64-DebugGame.lib"

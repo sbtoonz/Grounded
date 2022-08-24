@@ -1,0 +1,13 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.OEIPlayUtils.cpp.obj": [
+			"OEIPlayUtilsModule.cpp.obj",
+			"OEIPlayUtilsSubsystem.cpp.obj"
+		],
+		"Module.OEIPlayUtils.gen.cpp.obj": [
+			"OEIPlayUtils.init.gen.cpp.obj",
+			"OEIPlayUtilsSubsystem.gen.cpp.obj"
+		]
+	}
+}

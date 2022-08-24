@@ -1,0 +1,13 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-OEIVoiceOver-Win64-DebugGame.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\UnrealTest\Test\Intermediate\Build\Win64\MaineEditor\DebugGame\Engine\SharedPCH.Engine.NonOptimized.h.obj"
+"D:\UnrealTest\Test\Plugins\EnginePlugins\OEIAudio\Intermediate\Build\Win64\UE4Editor\DebugGame\OEIVoiceOver\Module.OEIVoiceOver.cpp.obj"
+"D:\UnrealTest\Test\Plugins\EnginePlugins\OEIAudio\Intermediate\Build\Win64\UE4Editor\DebugGame\OEIVoiceOver\Module.OEIVoiceOver.gen.cpp.obj"
+"D:\UnrealTest\Test\Plugins\EnginePlugins\OEIAudio\Intermediate\Build\Win64\UE4Editor\DebugGame\OEIVoiceOver\Default.rc2.res"
+/OUT:"D:\UnrealTest\Test\Plugins\EnginePlugins\OEIAudio\Intermediate\Build\Win64\UE4Editor\DebugGame\OEIVoiceOver\UE4Editor-OEIVoiceOver-Win64-DebugGame.lib"

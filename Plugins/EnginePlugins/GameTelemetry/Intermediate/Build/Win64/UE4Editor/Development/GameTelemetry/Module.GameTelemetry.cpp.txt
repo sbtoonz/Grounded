@@ -1,0 +1,5 @@
+D:\UnrealTest\Test\Plugins\EnginePlugins\GameTelemetry\Intermediate\Build\Win64\UE4Editor\Development\GameTelemetry\Definitions.GameTelemetry.h
+D:/UnrealTest/Test/Plugins/EnginePlugins/GameTelemetry/Source/GameTelemetry/Private/GameTelemetryModule.cpp
+D:/UnrealTest/Test/Plugins/EnginePlugins/GameTelemetry/Source/GameTelemetry/Private/TelemetryHelper.cpp
+D:\UnrealTest\Test\Plugins\EnginePlugins\GameTelemetry\Source\GameTelemetry\Public\TelemetryHelper.h
+D:\UnrealTest\Test\Plugins\EnginePlugins\GameTelemetry\Intermediate\Build\Win64\UE4Editor\Inc\GameTelemetry\TelemetryHelper.generated.h

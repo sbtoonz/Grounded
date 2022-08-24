@@ -1,0 +1,14 @@
+D:\UnrealTest\Test\Plugins\EnginePlugins\PlayFab\Intermediate\Build\Win64\UE4Editor\Development\PlayFab\Definitions.PlayFab.h
+D:/UnrealTest/Test/Plugins/EnginePlugins/PlayFab/Intermediate/Build/Win64/UE4Editor/Inc/PlayFab/AdminGetCloudScriptVersionsRequest.gen.cpp
+D:\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+D:\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+D:\UnrealTest\Test\Plugins\EnginePlugins\PlayFab\Source\PlayFab/Public/AdminGetCloudScriptVersionsRequest.h
+D:\UnrealTest\Test\Plugins\EnginePlugins\PlayFab\Source\PlayFab\Public\PlayFabRequestCommon.h
+D:\UnrealTest\Test\Plugins\EnginePlugins\PlayFab\Intermediate\Build\Win64\UE4Editor\Inc\PlayFab\PlayFabRequestCommon.generated.h
+D:\UnrealTest\Test\Plugins\EnginePlugins\PlayFab\Intermediate\Build\Win64\UE4Editor\Inc\PlayFab\AdminGetCloudScriptVersionsRequest.generated.h
+D:/UnrealTest/Test/Plugins/EnginePlugins/PlayFab/Intermediate/Build/Win64/UE4Editor/Inc/PlayFab/AdminGetPlayerSharedSecretsRequest.gen.cpp
+D:\UnrealTest\Test\Plugins\EnginePlugins\PlayFab\Source\PlayFab/Public/AdminGetPlayerSharedSecretsRequest.h
+D:\UnrealTest\Test\Plugins\EnginePlugins\PlayFab\Intermediate\Build\Win64\UE4Editor\Inc\PlayFab\AdminGetPlayerSharedSecretsRequest.generated.h
+D:/UnrealTest/Test/Plugins/EnginePlugins/PlayFab/Intermediate/Build/Win64/UE4Editor/Inc/PlayFab/AdminGetPlayerStatisticDefinitionsRequest.gen.cpp
+D:\UnrealTest\Test\Plugins\EnginePlugins\PlayFab\Source\PlayFab/Public/AdminGetPlayerStatisticDefinitionsRequest.h
+D:\UnrealTest\Test\Plugins\EnginePlugins\PlayFab\Intermediate\Build\Win64\UE4Editor\Inc\PlayFab\AdminGetPlayerStatisticDefinitionsRequest.generated.h

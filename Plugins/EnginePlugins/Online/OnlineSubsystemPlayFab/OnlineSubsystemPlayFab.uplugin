@@ -1,0 +1,49 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "Online Subsystem for Microsoft PlayFab",
+	"Description": "Access to Microsoft PlayFab",
+	"Category": "Online Platform",
+	"CreatedBy": "Obsidient Entertainment.",
+	"CreatedByURL": "https://www.obsidian.net/",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"EnabledByDefault": false,
+	"CanContainContent": false,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "OnlineSubsystemPlayFab",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"LocalizationTargets": [
+		{
+			"Name": "OnlineSubsystemPlayFab",
+			"LoadingPolicy": "Always"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "OnlineSubsystem",
+			"Enabled": true
+		},
+		{
+			"Name": "OnlineSubsystemUtils",
+			"Enabled": true
+		},
+		{
+			"Name": "OEIOnlineSubsystemUtils",
+			"Enabled": true
+		},
+		{
+			"Name": "PlayFab",
+			"Enabled": true
+		}
+	]
+}

@@ -1,0 +1,17 @@
+D:\UnrealTest\Test\Plugins\EnginePlugins\PlayFab\Intermediate\Build\Win64\UE4Editor\Development\PlayFab\Definitions.PlayFab.h
+D:/UnrealTest/Test/Plugins/EnginePlugins/PlayFab/Intermediate/Build/Win64/UE4Editor/Inc/PlayFab/MultiplayerCancelAllMatchmakingTicketsForPlayerResult.gen.cpp
+D:\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+D:\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+D:\UnrealTest\Test\Plugins\EnginePlugins\PlayFab\Source\PlayFab/Public/MultiplayerCancelAllMatchmakingTicketsForPlayerResult.h
+D:\UnrealTest\Test\Plugins\EnginePlugins\PlayFab\Source\PlayFab\Public\PlayFabResultCommon.h
+D:\UnrealTest\Test\Plugins\EnginePlugins\PlayFab\Intermediate\Build\Win64\UE4Editor\Inc\PlayFab\PlayFabResultCommon.generated.h
+D:\UnrealTest\Test\Plugins\EnginePlugins\PlayFab\Intermediate\Build\Win64\UE4Editor\Inc\PlayFab\MultiplayerCancelAllMatchmakingTicketsForPlayerResult.generated.h
+D:/UnrealTest/Test/Plugins/EnginePlugins/PlayFab/Intermediate/Build/Win64/UE4Editor/Inc/PlayFab/MultiplayerCancelAllServerBackfillTicketsForPlayerResult.gen.cpp
+D:\UnrealTest\Test\Plugins\EnginePlugins\PlayFab\Source\PlayFab/Public/MultiplayerCancelAllServerBackfillTicketsForPlayerResult.h
+D:\UnrealTest\Test\Plugins\EnginePlugins\PlayFab\Intermediate\Build\Win64\UE4Editor\Inc\PlayFab\MultiplayerCancelAllServerBackfillTicketsForPlayerResult.generated.h
+D:/UnrealTest/Test/Plugins/EnginePlugins/PlayFab/Intermediate/Build/Win64/UE4Editor/Inc/PlayFab/MultiplayerCancelMatchmakingTicketResult.gen.cpp
+D:\UnrealTest\Test\Plugins\EnginePlugins\PlayFab\Source\PlayFab/Public/MultiplayerCancelMatchmakingTicketResult.h
+D:\UnrealTest\Test\Plugins\EnginePlugins\PlayFab\Intermediate\Build\Win64\UE4Editor\Inc\PlayFab\MultiplayerCancelMatchmakingTicketResult.generated.h
+D:/UnrealTest/Test/Plugins/EnginePlugins/PlayFab/Intermediate/Build/Win64/UE4Editor/Inc/PlayFab/MultiplayerCancelServerBackfillTicketResult.gen.cpp
+D:\UnrealTest\Test\Plugins\EnginePlugins\PlayFab\Source\PlayFab/Public/MultiplayerCancelServerBackfillTicketResult.h
+D:\UnrealTest\Test\Plugins\EnginePlugins\PlayFab\Intermediate\Build\Win64\UE4Editor\Inc\PlayFab\MultiplayerCancelServerBackfillTicketResult.generated.h

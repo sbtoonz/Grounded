@@ -1,0 +1,5 @@
+D:\UnrealTest\Test\Plugins\EnginePlugins\OEIPhotoMode\Intermediate\Build\Win64\UE4Editor\Development\OEIPhotoMode\Definitions.OEIPhotoMode.h
+D:\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+D:\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+D:\UnrealTest\Test\Plugins\EnginePlugins\OEIPhotoMode\Source\OEIPhotoMode/Public/PhotoModeUIOptions.h
+D:\UnrealTest\Test\Plugins\EnginePlugins\OEIPhotoMode\Intermediate\Build\Win64\UE4Editor\Inc\OEIPhotoMode\PhotoModeUIOptions.generated.h

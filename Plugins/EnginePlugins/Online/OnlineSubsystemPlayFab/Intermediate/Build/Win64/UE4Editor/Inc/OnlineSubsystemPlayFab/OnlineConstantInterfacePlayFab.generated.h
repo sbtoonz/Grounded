@@ -1,0 +1,95 @@
+// Copyright Epic Games, Inc. All Rights Reserved.
+/*===========================================================================
+	Generated code exported from UnrealHeaderTool.
+	DO NOT modify this manually! Edit the corresponding .h files instead!
+===========================================================================*/
+
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+#ifdef ONLINESUBSYSTEMPLAYFAB_OnlineConstantInterfacePlayFab_generated_h
+#error "OnlineConstantInterfacePlayFab.generated.h already included, missing '#pragma once' in OnlineConstantInterfacePlayFab.h"
+#endif
+#define ONLINESUBSYSTEMPLAYFAB_OnlineConstantInterfacePlayFab_generated_h
+
+#define Test_Plugins_EnginePlugins_Online_OnlineSubsystemPlayFab_Source_OnlineSubsystemPlayFab_Public_OnlineConstantInterfacePlayFab_h_9_SPARSE_DATA
+#define Test_Plugins_EnginePlugins_Online_OnlineSubsystemPlayFab_Source_OnlineSubsystemPlayFab_Public_OnlineConstantInterfacePlayFab_h_9_RPC_WRAPPERS
+#define Test_Plugins_EnginePlugins_Online_OnlineSubsystemPlayFab_Source_OnlineSubsystemPlayFab_Public_OnlineConstantInterfacePlayFab_h_9_RPC_WRAPPERS_NO_PURE_DECLS
+#define Test_Plugins_EnginePlugins_Online_OnlineSubsystemPlayFab_Source_OnlineSubsystemPlayFab_Public_OnlineConstantInterfacePlayFab_h_9_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUOnlineConstantInterfacePlayFab(); \
+	friend struct Z_Construct_UClass_UOnlineConstantInterfacePlayFab_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineConstantInterfacePlayFab, UObject, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemPlayFab"), ONLINESUBSYSTEMPLAYFAB_API) \
+	DECLARE_SERIALIZER(UOnlineConstantInterfacePlayFab) \
+	virtual UObject* _getUObject() const override { return const_cast<UOnlineConstantInterfacePlayFab*>(this); }
+
+
+#define Test_Plugins_EnginePlugins_Online_OnlineSubsystemPlayFab_Source_OnlineSubsystemPlayFab_Public_OnlineConstantInterfacePlayFab_h_9_INCLASS \
+private: \
+	static void StaticRegisterNativesUOnlineConstantInterfacePlayFab(); \
+	friend struct Z_Construct_UClass_UOnlineConstantInterfacePlayFab_Statics; \
+public: \
+	DECLARE_CLASS(UOnlineConstantInterfacePlayFab, UObject, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OnlineSubsystemPlayFab"), ONLINESUBSYSTEMPLAYFAB_API) \
+	DECLARE_SERIALIZER(UOnlineConstantInterfacePlayFab) \
+	virtual UObject* _getUObject() const override { return const_cast<UOnlineConstantInterfacePlayFab*>(this); }
+
+
+#define Test_Plugins_EnginePlugins_Online_OnlineSubsystemPlayFab_Source_OnlineSubsystemPlayFab_Public_OnlineConstantInterfacePlayFab_h_9_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	ONLINESUBSYSTEMPLAYFAB_API UOnlineConstantInterfacePlayFab(const FObjectInitializer& ObjectInitializer); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOnlineConstantInterfacePlayFab) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(ONLINESUBSYSTEMPLAYFAB_API, UOnlineConstantInterfacePlayFab); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineConstantInterfacePlayFab); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	ONLINESUBSYSTEMPLAYFAB_API UOnlineConstantInterfacePlayFab(UOnlineConstantInterfacePlayFab&&); \
+	ONLINESUBSYSTEMPLAYFAB_API UOnlineConstantInterfacePlayFab(const UOnlineConstantInterfacePlayFab&); \
+public:
+
+
+#define Test_Plugins_EnginePlugins_Online_OnlineSubsystemPlayFab_Source_OnlineSubsystemPlayFab_Public_OnlineConstantInterfacePlayFab_h_9_ENHANCED_CONSTRUCTORS \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	ONLINESUBSYSTEMPLAYFAB_API UOnlineConstantInterfacePlayFab(UOnlineConstantInterfacePlayFab&&); \
+	ONLINESUBSYSTEMPLAYFAB_API UOnlineConstantInterfacePlayFab(const UOnlineConstantInterfacePlayFab&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(ONLINESUBSYSTEMPLAYFAB_API, UOnlineConstantInterfacePlayFab); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UOnlineConstantInterfacePlayFab); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UOnlineConstantInterfacePlayFab)
+
+
+#define Test_Plugins_EnginePlugins_Online_OnlineSubsystemPlayFab_Source_OnlineSubsystemPlayFab_Public_OnlineConstantInterfacePlayFab_h_9_PRIVATE_PROPERTY_OFFSET
+#define Test_Plugins_EnginePlugins_Online_OnlineSubsystemPlayFab_Source_OnlineSubsystemPlayFab_Public_OnlineConstantInterfacePlayFab_h_7_PROLOG
+#define Test_Plugins_EnginePlugins_Online_OnlineSubsystemPlayFab_Source_OnlineSubsystemPlayFab_Public_OnlineConstantInterfacePlayFab_h_9_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	Test_Plugins_EnginePlugins_Online_OnlineSubsystemPlayFab_Source_OnlineSubsystemPlayFab_Public_OnlineConstantInterfacePlayFab_h_9_PRIVATE_PROPERTY_OFFSET \
+	Test_Plugins_EnginePlugins_Online_OnlineSubsystemPlayFab_Source_OnlineSubsystemPlayFab_Public_OnlineConstantInterfacePlayFab_h_9_SPARSE_DATA \
+	Test_Plugins_EnginePlugins_Online_OnlineSubsystemPlayFab_Source_OnlineSubsystemPlayFab_Public_OnlineConstantInterfacePlayFab_h_9_RPC_WRAPPERS \
+	Test_Plugins_EnginePlugins_Online_OnlineSubsystemPlayFab_Source_OnlineSubsystemPlayFab_Public_OnlineConstantInterfacePlayFab_h_9_INCLASS \
+	Test_Plugins_EnginePlugins_Online_OnlineSubsystemPlayFab_Source_OnlineSubsystemPlayFab_Public_OnlineConstantInterfacePlayFab_h_9_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define Test_Plugins_EnginePlugins_Online_OnlineSubsystemPlayFab_Source_OnlineSubsystemPlayFab_Public_OnlineConstantInterfacePlayFab_h_9_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	Test_Plugins_EnginePlugins_Online_OnlineSubsystemPlayFab_Source_OnlineSubsystemPlayFab_Public_OnlineConstantInterfacePlayFab_h_9_PRIVATE_PROPERTY_OFFSET \
+	Test_Plugins_EnginePlugins_Online_OnlineSubsystemPlayFab_Source_OnlineSubsystemPlayFab_Public_OnlineConstantInterfacePlayFab_h_9_SPARSE_DATA \
+	Test_Plugins_EnginePlugins_Online_OnlineSubsystemPlayFab_Source_OnlineSubsystemPlayFab_Public_OnlineConstantInterfacePlayFab_h_9_RPC_WRAPPERS_NO_PURE_DECLS \
+	Test_Plugins_EnginePlugins_Online_OnlineSubsystemPlayFab_Source_OnlineSubsystemPlayFab_Public_OnlineConstantInterfacePlayFab_h_9_INCLASS_NO_PURE_DECLS \
+	Test_Plugins_EnginePlugins_Online_OnlineSubsystemPlayFab_Source_OnlineSubsystemPlayFab_Public_OnlineConstantInterfacePlayFab_h_9_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> ONLINESUBSYSTEMPLAYFAB_API UClass* StaticClass<class UOnlineConstantInterfacePlayFab>();
+
+#undef CURRENT_FILE_ID
+#define CURRENT_FILE_ID Test_Plugins_EnginePlugins_Online_OnlineSubsystemPlayFab_Source_OnlineSubsystemPlayFab_Public_OnlineConstantInterfacePlayFab_h
+
+
+PRAGMA_ENABLE_DEPRECATION_WARNINGS

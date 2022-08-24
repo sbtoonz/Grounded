@@ -1,0 +1,7 @@
+D:\UnrealTest\Test\Plugins\EnginePlugins\OEIAudio\Intermediate\Build\Win64\UE4Editor\Development\OEIVoiceOver\Definitions.OEIVoiceOver.h
+D:\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+D:\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+D:\UnrealTest\Test\Plugins\EnginePlugins\OEIAudio\Source\OEIVoiceOver/Public/OEIVOEmotionSectionParams.h
+D:\UE_4.27\Engine\Source\Runtime\GameplayTags\Classes\GameplayTagContainer.h
+D:\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\GameplayTags\GameplayTagContainer.generated.h
+D:\UnrealTest\Test\Plugins\EnginePlugins\OEIAudio\Intermediate\Build\Win64\UE4Editor\Inc\OEIVoiceOver\OEIVOEmotionSectionParams.generated.h

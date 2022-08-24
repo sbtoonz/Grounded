@@ -1,0 +1,35 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.OEIBookmarks.cpp.obj": [
+			"OEIBookmarkEntryBase.cpp.obj",
+			"OEIBookmarkEntryFolder.cpp.obj",
+			"OEIBookmarkEntryItem.cpp.obj",
+			"OEIBookmarksModule.cpp.obj",
+			"OEIBookmarksStatics.cpp.obj",
+			"OEIBookmarksWidgetBase.cpp.obj",
+			"OEIEditorBookmark.cpp.obj",
+			"OEIEditorBookmarks.cpp.obj",
+			"OEIEditorBookmarksFolder.cpp.obj"
+		],
+		"Module.OEIBookmarks.gen.cpp.obj": [
+			"OEIBookmarkEntryBase.gen.cpp.obj",
+			"OEIBookmarkEntryFolder.gen.cpp.obj",
+			"OEIBookmarkEntryItem.gen.cpp.obj",
+			"OEIBookmarks.init.gen.cpp.obj",
+			"OEIBookmarksStatics.gen.cpp.obj",
+			"OEIBookmarksWidgetBase.gen.cpp.obj",
+			"OEIEditorBookmark.gen.cpp.obj",
+			"OEIEditorBookmarks.gen.cpp.obj",
+			"OEIEditorBookmarksFolder.gen.cpp.obj",
+			"OnAddToFolderClickedDelegate.gen.cpp.obj",
+			"OnDeleteFolderClickedDelegate.gen.cpp.obj",
+			"OnEnterFolderClickedDelegate.gen.cpp.obj",
+			"OnEntryClickedDelegate.gen.cpp.obj",
+			"OnEntryDeleteClickedDelegate.gen.cpp.obj",
+			"OnEntryUpdateClickedDelegate.gen.cpp.obj",
+			"OnFolderOpenCloseClickedDelegate.gen.cpp.obj",
+			"OnRenameFolderClickedDelegate.gen.cpp.obj"
+		]
+	}
+}

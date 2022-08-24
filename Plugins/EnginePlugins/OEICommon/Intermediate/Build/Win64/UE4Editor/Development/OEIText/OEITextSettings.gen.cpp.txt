@@ -1,0 +1,7 @@
+D:\UnrealTest\Test\Plugins\EnginePlugins\OEICommon\Intermediate\Build\Win64\UE4Editor\Development\OEIText\Definitions.OEIText.h
+D:\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+D:\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+D:\UnrealTest\Test\Plugins\EnginePlugins\OEICommon\Source\OEIText/Public/OEITextSettings.h
+D:\UnrealTest\Test\Plugins\EnginePlugins\OEICommon\Source\OEIText\Public\StringTableBundleSets.h
+D:\UnrealTest\Test\Plugins\EnginePlugins\OEICommon\Intermediate\Build\Win64\UE4Editor\Inc\OEIText\StringTableBundleSets.generated.h
+D:\UnrealTest\Test\Plugins\EnginePlugins\OEICommon\Intermediate\Build\Win64\UE4Editor\Inc\OEIText\OEITextSettings.generated.h

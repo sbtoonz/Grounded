@@ -1,0 +1,18 @@
+{
+	"FileVersion": 3,
+	"Version": 10,
+	"VersionName": "1.00.00.0010",
+	"FriendlyName": "OEI Editor Modes",
+	"Description": "A set of in-editor authoring modes.",
+	"Category": "Obsidian",
+	"CreatedBy": "Obsidian Entertainment, Inc",
+	"CreatedByURL": "http://www.obsidian.net",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"EnabledByDefault": true,
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false
+}

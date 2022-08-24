@@ -1,0 +1,51 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "Online Subsystem Xbox Live API(XSAPI)",
+	"Description": "Access to Xbox Live platform(XSAPI)",
+	"Category": "Online Platform",
+	"CreatedBy": "Obsidian Entertainment.",
+	"CreatedByURL": "https://www.obsidian.net/",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"EnabledByDefault": false,
+	"CanContainContent": false,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"SupportedTargetPlatforms": [
+		"Win64"
+	],
+	"Modules": [
+		{
+			"Name": "OnlineSubsystemXSAPI",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"WhitelistPlatforms": [
+				"Win64"
+			]
+		}
+	],
+	"LocalizationTargets": [
+		{
+			"Name": "OnlineSubsystemXSAPI",
+			"LoadingPolicy": "Always"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "OnlineSubsystem",
+			"Enabled": true
+		},
+		{
+			"Name": "OnlineSubsystemUtils",
+			"Enabled": true
+		},
+		{
+			"Name": "OEIOnlineSubsystemUtils",
+			"Enabled": true
+		}
+	]
+}

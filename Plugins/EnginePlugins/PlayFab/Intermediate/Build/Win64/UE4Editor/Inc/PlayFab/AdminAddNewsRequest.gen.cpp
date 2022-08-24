@@ -1,0 +1,151 @@
+// Copyright Epic Games, Inc. All Rights Reserved.
+/*===========================================================================
+	Generated code exported from UnrealHeaderTool.
+	DO NOT modify this manually! Edit the corresponding .h files instead!
+===========================================================================*/
+
+#include "UObject/GeneratedCppIncludes.h"
+#include "PlayFab/Public/AdminAddNewsRequest.h"
+#ifdef _MSC_VER
+#pragma warning (push)
+#pragma warning (disable : 4883)
+#endif
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+void EmptyLinkFunctionForGeneratedCodeAdminAddNewsRequest() {}
+// Cross Module References
+	PLAYFAB_API UScriptStruct* Z_Construct_UScriptStruct_FAdminAddNewsRequest();
+	UPackage* Z_Construct_UPackage__Script_PlayFab();
+	PLAYFAB_API UScriptStruct* Z_Construct_UScriptStruct_FPlayFabRequestCommon();
+	PLAYFAB_API UClass* Z_Construct_UClass_UPlayFabJsonObject_NoRegister();
+// End Cross Module References
+
+static_assert(std::is_polymorphic<FAdminAddNewsRequest>() == std::is_polymorphic<FPlayFabRequestCommon>(), "USTRUCT FAdminAddNewsRequest cannot be polymorphic unless super FPlayFabRequestCommon is polymorphic");
+
+class UScriptStruct* FAdminAddNewsRequest::StaticStruct()
+{
+	static class UScriptStruct* Singleton = NULL;
+	if (!Singleton)
+	{
+		extern PLAYFAB_API uint32 Get_Z_Construct_UScriptStruct_FAdminAddNewsRequest_Hash();
+		Singleton = GetStaticStruct(Z_Construct_UScriptStruct_FAdminAddNewsRequest, Z_Construct_UPackage__Script_PlayFab(), TEXT("AdminAddNewsRequest"), sizeof(FAdminAddNewsRequest), Get_Z_Construct_UScriptStruct_FAdminAddNewsRequest_Hash());
+	}
+	return Singleton;
+}
+template<> PLAYFAB_API UScriptStruct* StaticStruct<FAdminAddNewsRequest>()
+{
+	return FAdminAddNewsRequest::StaticStruct();
+}
+static FCompiledInDeferStruct Z_CompiledInDeferStruct_UScriptStruct_FAdminAddNewsRequest(FAdminAddNewsRequest::StaticStruct, TEXT("/Script/PlayFab"), TEXT("AdminAddNewsRequest"), false, nullptr, nullptr);
+static struct FScriptStruct_PlayFab_StaticRegisterNativesFAdminAddNewsRequest
+{
+	FScriptStruct_PlayFab_StaticRegisterNativesFAdminAddNewsRequest()
+	{
+		UScriptStruct::DeferCppStructOps<FAdminAddNewsRequest>(FName(TEXT("AdminAddNewsRequest")));
+	}
+} ScriptStruct_PlayFab_StaticRegisterNativesFAdminAddNewsRequest;
+	struct Z_Construct_UScriptStruct_FAdminAddNewsRequest_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[];
+#endif
+		static void* NewStructOps();
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Body_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_Body;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CustomTags_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CustomTags;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Timestamp_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_Timestamp;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Title_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_Title;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const UE4CodeGen_Private::FStructParams ReturnStructParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAdminAddNewsRequest_Statics::Struct_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
+		{ "ModuleRelativePath", "Public/AdminAddNewsRequest.h" },
+	};
+#endif
+	void* Z_Construct_UScriptStruct_FAdminAddNewsRequest_Statics::NewStructOps()
+	{
+		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FAdminAddNewsRequest>();
+	}
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAdminAddNewsRequest_Statics::NewProp_Body_MetaData[] = {
+		{ "AllowPrivateAccess", "TRUE" },
+		{ "Category", "AdminAddNewsRequest" },
+		{ "ModuleRelativePath", "Public/AdminAddNewsRequest.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FAdminAddNewsRequest_Statics::NewProp_Body = { "Body", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FAdminAddNewsRequest, Body), METADATA_PARAMS(Z_Construct_UScriptStruct_FAdminAddNewsRequest_Statics::NewProp_Body_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FAdminAddNewsRequest_Statics::NewProp_Body_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAdminAddNewsRequest_Statics::NewProp_CustomTags_MetaData[] = {
+		{ "AllowPrivateAccess", "TRUE" },
+		{ "Category", "AdminAddNewsRequest" },
+		{ "ModuleRelativePath", "Public/AdminAddNewsRequest.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FAdminAddNewsRequest_Statics::NewProp_CustomTags = { "CustomTags", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FAdminAddNewsRequest, CustomTags), Z_Construct_UClass_UPlayFabJsonObject_NoRegister, METADATA_PARAMS(Z_Construct_UScriptStruct_FAdminAddNewsRequest_Statics::NewProp_CustomTags_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FAdminAddNewsRequest_Statics::NewProp_CustomTags_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAdminAddNewsRequest_Statics::NewProp_Timestamp_MetaData[] = {
+		{ "AllowPrivateAccess", "TRUE" },
+		{ "Category", "AdminAddNewsRequest" },
+		{ "ModuleRelativePath", "Public/AdminAddNewsRequest.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FAdminAddNewsRequest_Statics::NewProp_Timestamp = { "Timestamp", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FAdminAddNewsRequest, Timestamp), METADATA_PARAMS(Z_Construct_UScriptStruct_FAdminAddNewsRequest_Statics::NewProp_Timestamp_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FAdminAddNewsRequest_Statics::NewProp_Timestamp_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FAdminAddNewsRequest_Statics::NewProp_Title_MetaData[] = {
+		{ "AllowPrivateAccess", "TRUE" },
+		{ "Category", "AdminAddNewsRequest" },
+		{ "ModuleRelativePath", "Public/AdminAddNewsRequest.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FAdminAddNewsRequest_Statics::NewProp_Title = { "Title", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FAdminAddNewsRequest, Title), METADATA_PARAMS(Z_Construct_UScriptStruct_FAdminAddNewsRequest_Statics::NewProp_Title_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FAdminAddNewsRequest_Statics::NewProp_Title_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FAdminAddNewsRequest_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FAdminAddNewsRequest_Statics::NewProp_Body,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FAdminAddNewsRequest_Statics::NewProp_CustomTags,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FAdminAddNewsRequest_Statics::NewProp_Timestamp,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FAdminAddNewsRequest_Statics::NewProp_Title,
+	};
+	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FAdminAddNewsRequest_Statics::ReturnStructParams = {
+		(UObject* (*)())Z_Construct_UPackage__Script_PlayFab,
+		Z_Construct_UScriptStruct_FPlayFabRequestCommon,
+		&NewStructOps,
+		"AdminAddNewsRequest",
+		sizeof(FAdminAddNewsRequest),
+		alignof(FAdminAddNewsRequest),
+		Z_Construct_UScriptStruct_FAdminAddNewsRequest_Statics::PropPointers,
+		UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FAdminAddNewsRequest_Statics::PropPointers),
+		RF_Public|RF_Transient|RF_MarkAsNative,
+		EStructFlags(0x00000201),
+		METADATA_PARAMS(Z_Construct_UScriptStruct_FAdminAddNewsRequest_Statics::Struct_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FAdminAddNewsRequest_Statics::Struct_MetaDataParams))
+	};
+	UScriptStruct* Z_Construct_UScriptStruct_FAdminAddNewsRequest()
+	{
+#if WITH_HOT_RELOAD
+		extern uint32 Get_Z_Construct_UScriptStruct_FAdminAddNewsRequest_Hash();
+		UPackage* Outer = Z_Construct_UPackage__Script_PlayFab();
+		static UScriptStruct* ReturnStruct = FindExistingStructIfHotReloadOrDynamic(Outer, TEXT("AdminAddNewsRequest"), sizeof(FAdminAddNewsRequest), Get_Z_Construct_UScriptStruct_FAdminAddNewsRequest_Hash(), false);
+#else
+		static UScriptStruct* ReturnStruct = nullptr;
+#endif
+		if (!ReturnStruct)
+		{
+			UE4CodeGen_Private::ConstructUScriptStruct(ReturnStruct, Z_Construct_UScriptStruct_FAdminAddNewsRequest_Statics::ReturnStructParams);
+		}
+		return ReturnStruct;
+	}
+	uint32 Get_Z_Construct_UScriptStruct_FAdminAddNewsRequest_Hash() { return 3835091218U; }
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+#ifdef _MSC_VER
+#pragma warning (pop)
+#endif

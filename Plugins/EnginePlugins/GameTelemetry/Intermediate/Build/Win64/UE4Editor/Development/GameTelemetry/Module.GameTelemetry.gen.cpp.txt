@@ -1,0 +1,7 @@
+D:\UnrealTest\Test\Plugins\EnginePlugins\GameTelemetry\Intermediate\Build\Win64\UE4Editor\Development\GameTelemetry\Definitions.GameTelemetry.h
+D:/UnrealTest/Test/Plugins/EnginePlugins/GameTelemetry/Intermediate/Build/Win64/UE4Editor/Inc/GameTelemetry/GameTelemetry.init.gen.cpp
+D:\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+D:\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+D:/UnrealTest/Test/Plugins/EnginePlugins/GameTelemetry/Intermediate/Build/Win64/UE4Editor/Inc/GameTelemetry/TelemetryHelper.gen.cpp
+D:\UnrealTest\Test\Plugins\EnginePlugins\GameTelemetry\Source\GameTelemetry/Public/TelemetryHelper.h
+D:\UnrealTest\Test\Plugins\EnginePlugins\GameTelemetry\Intermediate\Build\Win64\UE4Editor\Inc\GameTelemetry\TelemetryHelper.generated.h

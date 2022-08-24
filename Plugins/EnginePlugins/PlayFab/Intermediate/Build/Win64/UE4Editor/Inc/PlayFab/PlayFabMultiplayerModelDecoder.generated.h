@@ -1,0 +1,229 @@
+// Copyright Epic Games, Inc. All Rights Reserved.
+/*===========================================================================
+	Generated code exported from UnrealHeaderTool.
+	DO NOT modify this manually! Edit the corresponding .h files instead!
+===========================================================================*/
+
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UPlayFabJsonObject;
+struct FMultiplayerBuildAliasDetailsResponse;
+struct FMultiplayerCancelAllMatchmakingTicketsForPlayerResult;
+struct FMultiplayerCancelAllServerBackfillTicketsForPlayerResult;
+struct FMultiplayerCancelMatchmakingTicketResult;
+struct FMultiplayerCancelServerBackfillTicketResult;
+struct FMultiplayerCreateBuildWithCustomContainerResponse;
+struct FMultiplayerCreateBuildWithManagedContainerResponse;
+struct FMultiplayerCreateBuildWithProcessBasedServerResponse;
+struct FMultiplayerCreateMatchmakingTicketResult;
+struct FMultiplayerCreateRemoteUserResponse;
+struct FMultiplayerCreateServerBackfillTicketResult;
+struct FMultiplayerCreateTitleMultiplayerServersQuotaChangeResponse;
+struct FMultiplayerEmptyResponse;
+struct FMultiplayerEnableMultiplayerServersForTitleResponse;
+struct FMultiplayerGetAssetUploadUrlResponse;
+struct FMultiplayerGetBuildResponse;
+struct FMultiplayerGetContainerRegistryCredentialsResponse;
+struct FMultiplayerGetMatchmakingTicketResult;
+struct FMultiplayerGetMatchResult;
+struct FMultiplayerGetMultiplayerServerDetailsResponse;
+struct FMultiplayerGetMultiplayerServerLogsResponse;
+struct FMultiplayerGetQueueStatisticsResult;
+struct FMultiplayerGetRemoteLoginEndpointResponse;
+struct FMultiplayerGetServerBackfillTicketResult;
+struct FMultiplayerGetTitleEnabledForMultiplayerServersStatusResponse;
+struct FMultiplayerGetTitleMultiplayerServersQuotaChangeResponse;
+struct FMultiplayerGetTitleMultiplayerServersQuotasResponse;
+struct FMultiplayerJoinMatchmakingTicketResult;
+struct FMultiplayerListAssetSummariesResponse;
+struct FMultiplayerListBuildAliasesForTitleResponse;
+struct FMultiplayerListBuildSummariesResponse;
+struct FMultiplayerListCertificateSummariesResponse;
+struct FMultiplayerListContainerImagesResponse;
+struct FMultiplayerListContainerImageTagsResponse;
+struct FMultiplayerListMatchmakingTicketsForPlayerResult;
+struct FMultiplayerListMultiplayerServersResponse;
+struct FMultiplayerListPartyQosServersResponse;
+struct FMultiplayerListQosServersForTitleResponse;
+struct FMultiplayerListServerBackfillTicketsForPlayerResult;
+struct FMultiplayerListTitleMultiplayerServersQuotaChangesResponse;
+struct FMultiplayerListVirtualMachineSummariesResponse;
+struct FMultiplayerRequestMultiplayerServerResponse;
+struct FMultiplayerRolloverContainerRegistryCredentialsResponse;
+#ifdef PLAYFAB_PlayFabMultiplayerModelDecoder_generated_h
+#error "PlayFabMultiplayerModelDecoder.generated.h already included, missing '#pragma once' in PlayFabMultiplayerModelDecoder.h"
+#endif
+#define PLAYFAB_PlayFabMultiplayerModelDecoder_generated_h
+
+#define Test_Plugins_EnginePlugins_PlayFab_Source_PlayFab_Public_PlayFabMultiplayerModelDecoder_h_53_SPARSE_DATA
+#define Test_Plugins_EnginePlugins_PlayFab_Source_PlayFab_Public_PlayFabMultiplayerModelDecoder_h_53_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execdecodeBuildAliasDetailsResponseResponse); \
+	DECLARE_FUNCTION(execdecodeCancelAllMatchmakingTicketsForPlayerResultResponse); \
+	DECLARE_FUNCTION(execdecodeCancelAllServerBackfillTicketsForPlayerResultResponse); \
+	DECLARE_FUNCTION(execdecodeCancelMatchmakingTicketResultResponse); \
+	DECLARE_FUNCTION(execdecodeCancelServerBackfillTicketResultResponse); \
+	DECLARE_FUNCTION(execdecodeCreateBuildWithCustomContainerResponseResponse); \
+	DECLARE_FUNCTION(execdecodeCreateBuildWithManagedContainerResponseResponse); \
+	DECLARE_FUNCTION(execdecodeCreateBuildWithProcessBasedServerResponseResponse); \
+	DECLARE_FUNCTION(execdecodeCreateMatchmakingTicketResultResponse); \
+	DECLARE_FUNCTION(execdecodeCreateRemoteUserResponseResponse); \
+	DECLARE_FUNCTION(execdecodeCreateServerBackfillTicketResultResponse); \
+	DECLARE_FUNCTION(execdecodeCreateTitleMultiplayerServersQuotaChangeResponseResponse); \
+	DECLARE_FUNCTION(execdecodeEmptyResponseResponse); \
+	DECLARE_FUNCTION(execdecodeEnableMultiplayerServersForTitleResponseResponse); \
+	DECLARE_FUNCTION(execdecodeGetAssetUploadUrlResponseResponse); \
+	DECLARE_FUNCTION(execdecodeGetBuildResponseResponse); \
+	DECLARE_FUNCTION(execdecodeGetContainerRegistryCredentialsResponseResponse); \
+	DECLARE_FUNCTION(execdecodeGetMatchmakingTicketResultResponse); \
+	DECLARE_FUNCTION(execdecodeGetMatchResultResponse); \
+	DECLARE_FUNCTION(execdecodeGetMultiplayerServerDetailsResponseResponse); \
+	DECLARE_FUNCTION(execdecodeGetMultiplayerServerLogsResponseResponse); \
+	DECLARE_FUNCTION(execdecodeGetQueueStatisticsResultResponse); \
+	DECLARE_FUNCTION(execdecodeGetRemoteLoginEndpointResponseResponse); \
+	DECLARE_FUNCTION(execdecodeGetServerBackfillTicketResultResponse); \
+	DECLARE_FUNCTION(execdecodeGetTitleEnabledForMultiplayerServersStatusResponseResponse); \
+	DECLARE_FUNCTION(execdecodeGetTitleMultiplayerServersQuotaChangeResponseResponse); \
+	DECLARE_FUNCTION(execdecodeGetTitleMultiplayerServersQuotasResponseResponse); \
+	DECLARE_FUNCTION(execdecodeJoinMatchmakingTicketResultResponse); \
+	DECLARE_FUNCTION(execdecodeListAssetSummariesResponseResponse); \
+	DECLARE_FUNCTION(execdecodeListBuildAliasesForTitleResponseResponse); \
+	DECLARE_FUNCTION(execdecodeListBuildSummariesResponseResponse); \
+	DECLARE_FUNCTION(execdecodeListCertificateSummariesResponseResponse); \
+	DECLARE_FUNCTION(execdecodeListContainerImagesResponseResponse); \
+	DECLARE_FUNCTION(execdecodeListContainerImageTagsResponseResponse); \
+	DECLARE_FUNCTION(execdecodeListMatchmakingTicketsForPlayerResultResponse); \
+	DECLARE_FUNCTION(execdecodeListMultiplayerServersResponseResponse); \
+	DECLARE_FUNCTION(execdecodeListPartyQosServersResponseResponse); \
+	DECLARE_FUNCTION(execdecodeListQosServersForTitleResponseResponse); \
+	DECLARE_FUNCTION(execdecodeListServerBackfillTicketsForPlayerResultResponse); \
+	DECLARE_FUNCTION(execdecodeListTitleMultiplayerServersQuotaChangesResponseResponse); \
+	DECLARE_FUNCTION(execdecodeListVirtualMachineSummariesResponseResponse); \
+	DECLARE_FUNCTION(execdecodeRequestMultiplayerServerResponseResponse); \
+	DECLARE_FUNCTION(execdecodeRolloverContainerRegistryCredentialsResponseResponse);
+
+
+#define Test_Plugins_EnginePlugins_PlayFab_Source_PlayFab_Public_PlayFabMultiplayerModelDecoder_h_53_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execdecodeBuildAliasDetailsResponseResponse); \
+	DECLARE_FUNCTION(execdecodeCancelAllMatchmakingTicketsForPlayerResultResponse); \
+	DECLARE_FUNCTION(execdecodeCancelAllServerBackfillTicketsForPlayerResultResponse); \
+	DECLARE_FUNCTION(execdecodeCancelMatchmakingTicketResultResponse); \
+	DECLARE_FUNCTION(execdecodeCancelServerBackfillTicketResultResponse); \
+	DECLARE_FUNCTION(execdecodeCreateBuildWithCustomContainerResponseResponse); \
+	DECLARE_FUNCTION(execdecodeCreateBuildWithManagedContainerResponseResponse); \
+	DECLARE_FUNCTION(execdecodeCreateBuildWithProcessBasedServerResponseResponse); \
+	DECLARE_FUNCTION(execdecodeCreateMatchmakingTicketResultResponse); \
+	DECLARE_FUNCTION(execdecodeCreateRemoteUserResponseResponse); \
+	DECLARE_FUNCTION(execdecodeCreateServerBackfillTicketResultResponse); \
+	DECLARE_FUNCTION(execdecodeCreateTitleMultiplayerServersQuotaChangeResponseResponse); \
+	DECLARE_FUNCTION(execdecodeEmptyResponseResponse); \
+	DECLARE_FUNCTION(execdecodeEnableMultiplayerServersForTitleResponseResponse); \
+	DECLARE_FUNCTION(execdecodeGetAssetUploadUrlResponseResponse); \
+	DECLARE_FUNCTION(execdecodeGetBuildResponseResponse); \
+	DECLARE_FUNCTION(execdecodeGetContainerRegistryCredentialsResponseResponse); \
+	DECLARE_FUNCTION(execdecodeGetMatchmakingTicketResultResponse); \
+	DECLARE_FUNCTION(execdecodeGetMatchResultResponse); \
+	DECLARE_FUNCTION(execdecodeGetMultiplayerServerDetailsResponseResponse); \
+	DECLARE_FUNCTION(execdecodeGetMultiplayerServerLogsResponseResponse); \
+	DECLARE_FUNCTION(execdecodeGetQueueStatisticsResultResponse); \
+	DECLARE_FUNCTION(execdecodeGetRemoteLoginEndpointResponseResponse); \
+	DECLARE_FUNCTION(execdecodeGetServerBackfillTicketResultResponse); \
+	DECLARE_FUNCTION(execdecodeGetTitleEnabledForMultiplayerServersStatusResponseResponse); \
+	DECLARE_FUNCTION(execdecodeGetTitleMultiplayerServersQuotaChangeResponseResponse); \
+	DECLARE_FUNCTION(execdecodeGetTitleMultiplayerServersQuotasResponseResponse); \
+	DECLARE_FUNCTION(execdecodeJoinMatchmakingTicketResultResponse); \
+	DECLARE_FUNCTION(execdecodeListAssetSummariesResponseResponse); \
+	DECLARE_FUNCTION(execdecodeListBuildAliasesForTitleResponseResponse); \
+	DECLARE_FUNCTION(execdecodeListBuildSummariesResponseResponse); \
+	DECLARE_FUNCTION(execdecodeListCertificateSummariesResponseResponse); \
+	DECLARE_FUNCTION(execdecodeListContainerImagesResponseResponse); \
+	DECLARE_FUNCTION(execdecodeListContainerImageTagsResponseResponse); \
+	DECLARE_FUNCTION(execdecodeListMatchmakingTicketsForPlayerResultResponse); \
+	DECLARE_FUNCTION(execdecodeListMultiplayerServersResponseResponse); \
+	DECLARE_FUNCTION(execdecodeListPartyQosServersResponseResponse); \
+	DECLARE_FUNCTION(execdecodeListQosServersForTitleResponseResponse); \
+	DECLARE_FUNCTION(execdecodeListServerBackfillTicketsForPlayerResultResponse); \
+	DECLARE_FUNCTION(execdecodeListTitleMultiplayerServersQuotaChangesResponseResponse); \
+	DECLARE_FUNCTION(execdecodeListVirtualMachineSummariesResponseResponse); \
+	DECLARE_FUNCTION(execdecodeRequestMultiplayerServerResponseResponse); \
+	DECLARE_FUNCTION(execdecodeRolloverContainerRegistryCredentialsResponseResponse);
+
+
+#define Test_Plugins_EnginePlugins_PlayFab_Source_PlayFab_Public_PlayFabMultiplayerModelDecoder_h_53_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUPlayFabMultiplayerModelDecoder(); \
+	friend struct Z_Construct_UClass_UPlayFabMultiplayerModelDecoder_Statics; \
+public: \
+	DECLARE_CLASS(UPlayFabMultiplayerModelDecoder, UBlueprintFunctionLibrary, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/PlayFab"), NO_API) \
+	DECLARE_SERIALIZER(UPlayFabMultiplayerModelDecoder)
+
+
+#define Test_Plugins_EnginePlugins_PlayFab_Source_PlayFab_Public_PlayFabMultiplayerModelDecoder_h_53_INCLASS \
+private: \
+	static void StaticRegisterNativesUPlayFabMultiplayerModelDecoder(); \
+	friend struct Z_Construct_UClass_UPlayFabMultiplayerModelDecoder_Statics; \
+public: \
+	DECLARE_CLASS(UPlayFabMultiplayerModelDecoder, UBlueprintFunctionLibrary, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/PlayFab"), NO_API) \
+	DECLARE_SERIALIZER(UPlayFabMultiplayerModelDecoder)
+
+
+#define Test_Plugins_EnginePlugins_PlayFab_Source_PlayFab_Public_PlayFabMultiplayerModelDecoder_h_53_STANDARD_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UPlayFabMultiplayerModelDecoder(const FObjectInitializer& ObjectInitializer); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UPlayFabMultiplayerModelDecoder) \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UPlayFabMultiplayerModelDecoder); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UPlayFabMultiplayerModelDecoder); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UPlayFabMultiplayerModelDecoder(UPlayFabMultiplayerModelDecoder&&); \
+	NO_API UPlayFabMultiplayerModelDecoder(const UPlayFabMultiplayerModelDecoder&); \
+public:
+
+
+#define Test_Plugins_EnginePlugins_PlayFab_Source_PlayFab_Public_PlayFabMultiplayerModelDecoder_h_53_ENHANCED_CONSTRUCTORS \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UPlayFabMultiplayerModelDecoder(UPlayFabMultiplayerModelDecoder&&); \
+	NO_API UPlayFabMultiplayerModelDecoder(const UPlayFabMultiplayerModelDecoder&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UPlayFabMultiplayerModelDecoder); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UPlayFabMultiplayerModelDecoder); \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UPlayFabMultiplayerModelDecoder)
+
+
+#define Test_Plugins_EnginePlugins_PlayFab_Source_PlayFab_Public_PlayFabMultiplayerModelDecoder_h_53_PRIVATE_PROPERTY_OFFSET
+#define Test_Plugins_EnginePlugins_PlayFab_Source_PlayFab_Public_PlayFabMultiplayerModelDecoder_h_51_PROLOG
+#define Test_Plugins_EnginePlugins_PlayFab_Source_PlayFab_Public_PlayFabMultiplayerModelDecoder_h_53_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	Test_Plugins_EnginePlugins_PlayFab_Source_PlayFab_Public_PlayFabMultiplayerModelDecoder_h_53_PRIVATE_PROPERTY_OFFSET \
+	Test_Plugins_EnginePlugins_PlayFab_Source_PlayFab_Public_PlayFabMultiplayerModelDecoder_h_53_SPARSE_DATA \
+	Test_Plugins_EnginePlugins_PlayFab_Source_PlayFab_Public_PlayFabMultiplayerModelDecoder_h_53_RPC_WRAPPERS \
+	Test_Plugins_EnginePlugins_PlayFab_Source_PlayFab_Public_PlayFabMultiplayerModelDecoder_h_53_INCLASS \
+	Test_Plugins_EnginePlugins_PlayFab_Source_PlayFab_Public_PlayFabMultiplayerModelDecoder_h_53_STANDARD_CONSTRUCTORS \
+public: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+#define Test_Plugins_EnginePlugins_PlayFab_Source_PlayFab_Public_PlayFabMultiplayerModelDecoder_h_53_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	Test_Plugins_EnginePlugins_PlayFab_Source_PlayFab_Public_PlayFabMultiplayerModelDecoder_h_53_PRIVATE_PROPERTY_OFFSET \
+	Test_Plugins_EnginePlugins_PlayFab_Source_PlayFab_Public_PlayFabMultiplayerModelDecoder_h_53_SPARSE_DATA \
+	Test_Plugins_EnginePlugins_PlayFab_Source_PlayFab_Public_PlayFabMultiplayerModelDecoder_h_53_RPC_WRAPPERS_NO_PURE_DECLS \
+	Test_Plugins_EnginePlugins_PlayFab_Source_PlayFab_Public_PlayFabMultiplayerModelDecoder_h_53_INCLASS_NO_PURE_DECLS \
+	Test_Plugins_EnginePlugins_PlayFab_Source_PlayFab_Public_PlayFabMultiplayerModelDecoder_h_53_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> PLAYFAB_API UClass* StaticClass<class UPlayFabMultiplayerModelDecoder>();
+
+#undef CURRENT_FILE_ID
+#define CURRENT_FILE_ID Test_Plugins_EnginePlugins_PlayFab_Source_PlayFab_Public_PlayFabMultiplayerModelDecoder_h
+
+
+PRAGMA_ENABLE_DEPRECATION_WARNINGS

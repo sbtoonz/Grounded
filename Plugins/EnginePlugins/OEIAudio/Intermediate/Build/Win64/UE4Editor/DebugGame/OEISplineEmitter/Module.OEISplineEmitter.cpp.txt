@@ -1,0 +1,10 @@
+D:\UnrealTest\Test\Plugins\EnginePlugins\OEIAudio\Intermediate\Build\Win64\UE4Editor\DebugGame\OEISplineEmitter\Definitions.OEISplineEmitter.h
+D:/UnrealTest/Test/Plugins/EnginePlugins/OEIAudio/Source/OEISplineEmitter/Private/OEILocalPlayerSplineEmitterSubsystem.cpp
+D:\UnrealTest\Test\Plugins\EnginePlugins\OEIAudio\Source\OEISplineEmitter\Public\OEILocalPlayerSplineEmitterSubsystem.h
+D:\UnrealTest\Test\Plugins\EnginePlugins\OEIAudio\Intermediate\Build\Win64\UE4Editor\Inc\OEISplineEmitter\OEILocalPlayerSplineEmitterSubsystem.generated.h
+D:/UnrealTest/Test/Plugins/EnginePlugins/OEIAudio/Source/OEISplineEmitter/Private/OEISplineEmitterActor.cpp
+D:\UnrealTest\Test\Plugins\EnginePlugins\OEIAudio\Source\OEISplineEmitter\Public\OEISplineEmitterActor.h
+D:\UnrealTest\Test\Plugins\EnginePlugins\OEIAudio\Intermediate\Build\Win64\UE4Editor\Inc\OEISplineEmitter\OEISplineEmitterActor.generated.h
+D:\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/SplineComponent.h
+D:\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SplineComponent.generated.h
+D:/UnrealTest/Test/Plugins/EnginePlugins/OEIAudio/Source/OEISplineEmitter/Private/OEISplineEmitterModule.cpp

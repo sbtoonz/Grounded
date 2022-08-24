@@ -1,0 +1,18 @@
+{
+	"FileVersion": 3,
+	"Version": 17,
+	"VersionName": "1.00.00.0017",
+	"FriendlyName": "OEI Editor Utils",
+	"Description": "A suite of small, custom editors.",
+	"Category": "Obsidian",
+	"CreatedBy": "Obsidian Entertainment, Inc",
+	"CreatedByURL": "http://www.obsidian.net",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"EnabledByDefault": true,
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false
+}

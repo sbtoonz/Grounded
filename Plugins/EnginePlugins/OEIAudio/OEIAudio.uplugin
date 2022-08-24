@@ -1,0 +1,45 @@
+{
+	"FileVersion": 3,
+	"Version": 54,
+	"VersionName": "1.00.00.0054",
+	"FriendlyName": "OEI Audio",
+	"Description": "Plays sound effects and voice over",
+	"Category": "Obsidian",
+	"CreatedBy": "Obsidian Entertainment, Inc",
+	"CreatedByURL": "http://www.obsidian.net",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "OEISplineEmitter",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "OEIVoiceOver",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "OEICommon",
+			"Enabled": true,
+			"Optional": true
+		},
+		{
+			"Name": "OEIFlowCharts",
+			"Enabled": true,
+			"Optional": true
+		},
+		{
+			"Name": "EditorScriptingUtilities",
+			"Enabled": true
+		}
+	]
+}

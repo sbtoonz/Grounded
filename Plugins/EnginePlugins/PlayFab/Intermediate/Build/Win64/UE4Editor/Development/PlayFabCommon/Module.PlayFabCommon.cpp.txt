@@ -1,0 +1,8 @@
+D:\UnrealTest\Test\Plugins\EnginePlugins\PlayFab\Intermediate\Build\Win64\UE4Editor\Development\PlayFabCommon\Definitions.PlayFabCommon.h
+D:/UnrealTest/Test/Plugins/EnginePlugins/PlayFab/Source/PlayFabCommon/Private/PlayFabAuthenticationContext.cpp
+D:\UnrealTest\Test\Plugins\EnginePlugins\PlayFab\Source\PlayFabCommon\Public\PlayFabAuthenticationContext.h
+D:\UnrealTest\Test\Plugins\EnginePlugins\PlayFab\Intermediate\Build\Win64\UE4Editor\Inc\PlayFabCommon\PlayFabAuthenticationContext.generated.h
+D:/UnrealTest/Test/Plugins/EnginePlugins/PlayFab/Source/PlayFabCommon/Private/PlayFabCommonModule.cpp
+D:/UnrealTest/Test/Plugins/EnginePlugins/PlayFab/Source/PlayFabCommon/Private/PlayFabRuntimeSettings.cpp
+D:\UnrealTest\Test\Plugins\EnginePlugins\PlayFab\Source\PlayFabCommon\Public\PlayFabRuntimeSettings.h
+D:\UnrealTest\Test\Plugins\EnginePlugins\PlayFab\Intermediate\Build\Win64\UE4Editor\Inc\PlayFabCommon\PlayFabRuntimeSettings.generated.h
