@@ -23,8 +23,8 @@ void UOverTimeEffect::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutL
 
 UOverTimeEffect::UOverTimeEffect() {
     this->bIsEnabled = true;
-    this->MinimumValue = -inff;
-    this->MaximumValue = inff;
+    this->MinimumValue = -INFINITY;
+    this->MaximumValue = INFINITY;
     this->DamageType = NULL;
     this->Rate = 0.00f;
     this->TickInterval = 0.00f;

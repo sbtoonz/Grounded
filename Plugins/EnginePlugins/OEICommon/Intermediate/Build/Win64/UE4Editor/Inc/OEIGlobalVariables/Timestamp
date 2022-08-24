@@ -1,4 +1,6 @@
 D:\UnrealTest\Test\Plugins\EnginePlugins\OEICommon\Source\OEIGlobalVariables\Public\GlobalVariableBundle.h
+D:\UnrealTest\Test\Plugins\EnginePlugins\OEICommon\Source\OEIGlobalVariables\Public\GlobalVariableConditional.h
+D:\UnrealTest\Test\Plugins\EnginePlugins\OEICommon\Source\OEIGlobalVariables\Public\GlobalVariableConditionals.h
 D:\UnrealTest\Test\Plugins\EnginePlugins\OEICommon\Source\OEIGlobalVariables\Public\GlobalVariableConditionalsBP.h
 D:\UnrealTest\Test\Plugins\EnginePlugins\OEICommon\Source\OEIGlobalVariables\Public\GlobalVariableEntry.h
 D:\UnrealTest\Test\Plugins\EnginePlugins\OEICommon\Source\OEIGlobalVariables\Public\GlobalVariableReference.h
@@ -6,8 +8,6 @@ D:\UnrealTest\Test\Plugins\EnginePlugins\OEICommon\Source\OEIGlobalVariables\Pub
 D:\UnrealTest\Test\Plugins\EnginePlugins\OEICommon\Source\OEIGlobalVariables\Public\IncrementGlobalValueEvent.h
 D:\UnrealTest\Test\Plugins\EnginePlugins\OEICommon\Source\OEIGlobalVariables\Public\OEIGlobalVariableLibrary.h
 D:\UnrealTest\Test\Plugins\EnginePlugins\OEICommon\Source\OEIGlobalVariables\Public\OEIGlobalVariableSettings.h
-D:\UnrealTest\Test\Plugins\EnginePlugins\OEICommon\Source\OEIGlobalVariables\Public\SetGlobalIfGlobalEvent.h
-D:\UnrealTest\Test\Plugins\EnginePlugins\OEICommon\Source\OEIGlobalVariables\Public\GlobalVariableConditionals.h
 D:\UnrealTest\Test\Plugins\EnginePlugins\OEICommon\Source\OEIGlobalVariables\Public\RandomizeGlobalValueEvent.h
-D:\UnrealTest\Test\Plugins\EnginePlugins\OEICommon\Source\OEIGlobalVariables\Public\GlobalVariableConditional.h
+D:\UnrealTest\Test\Plugins\EnginePlugins\OEICommon\Source\OEIGlobalVariables\Public\SetGlobalIfGlobalEvent.h
 D:\UnrealTest\Test\Plugins\EnginePlugins\OEICommon\Source\OEIGlobalVariables\Public\SetGlobalValueEvent.h

@@ -19,6 +19,9 @@
 *.dll
 *.gen.cpp
 *.generated.h
+*.cpp.txt
+*.exp
+*.txt.tmp
 
 # Fortran module files
 *.mod
