@@ -16,7 +16,7 @@ private:
     UPROPERTY(EditAnywhere, Transient)
     TMap<uint32, FLiteBuilding> Buildings;
     
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
+    UPROPERTY(EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TSet<uint32> RemovedBuildings;
     
 public:

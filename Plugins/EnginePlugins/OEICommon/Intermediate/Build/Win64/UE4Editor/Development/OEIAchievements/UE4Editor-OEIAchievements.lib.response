@@ -1,0 +1,13 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-OEIAchievements.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\UnrealTest\Test\Intermediate\Build\Win64\MaineEditor\Development\Engine\SharedPCH.Engine.h.obj"
+"D:\UnrealTest\Test\Plugins\EnginePlugins\OEICommon\Intermediate\Build\Win64\UE4Editor\Development\OEIAchievements\Module.OEIAchievements.cpp.obj"
+"D:\UnrealTest\Test\Plugins\EnginePlugins\OEICommon\Intermediate\Build\Win64\UE4Editor\Development\OEIAchievements\Module.OEIAchievements.gen.cpp.obj"
+"D:\UnrealTest\Test\Plugins\EnginePlugins\OEICommon\Intermediate\Build\Win64\UE4Editor\Development\OEIAchievements\Default.rc2.res"
+/OUT:"D:\UnrealTest\Test\Plugins\EnginePlugins\OEICommon\Intermediate\Build\Win64\UE4Editor\Development\OEIAchievements\UE4Editor-OEIAchievements.lib"

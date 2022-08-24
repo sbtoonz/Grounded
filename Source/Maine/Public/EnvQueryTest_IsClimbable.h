@@ -9,7 +9,7 @@ class MAINE_API UEnvQueryTest_IsClimbable : public UEnvQueryTest {
     GENERATED_BODY()
 public:
 protected:
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    UPROPERTY(EditAnywhere)
     FAIDataProviderStructValue ClimbingSizeProvider;
     
 public:

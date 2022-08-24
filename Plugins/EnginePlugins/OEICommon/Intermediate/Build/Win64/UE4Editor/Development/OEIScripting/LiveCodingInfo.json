@@ -1,0 +1,51 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.OEIScripting.cpp.obj": [
+			"Conditional.cpp.obj",
+			"ConditionalCall.cpp.obj",
+			"ConditionalExpression.cpp.obj",
+			"ConditionalLibrary.cpp.obj",
+			"ConditionalLibraryScripting.cpp.obj",
+			"ExpressionComponent.cpp.obj",
+			"GlobalConditional.cpp.obj",
+			"GlobalConditionalReference.cpp.obj",
+			"GlobalScript.cpp.obj",
+			"GlobalScriptBase.cpp.obj",
+			"GlobalScriptReference.cpp.obj",
+			"GlobalScriptsBundle.cpp.obj",
+			"OEIScriptingModule.cpp.obj",
+			"OEIScriptingSettings.cpp.obj",
+			"ScriptCall.cpp.obj",
+			"ScriptEvent.cpp.obj",
+			"ScriptLibrary.cpp.obj",
+			"ScriptLibraryScripting.cpp.obj",
+			"TimelineScriptCall.cpp.obj"
+		],
+		"Module.OEIScripting.gen.cpp.obj": [
+			"Conditional.gen.cpp.obj",
+			"ConditionalCall.gen.cpp.obj",
+			"ConditionalExpression.gen.cpp.obj",
+			"ConditionalLibrary.gen.cpp.obj",
+			"ConditionalLibraryScripting.gen.cpp.obj",
+			"EExpressionComponentType.gen.cpp.obj",
+			"EGlobalScriptType.gen.cpp.obj",
+			"ELogicalOperator.gen.cpp.obj",
+			"EScriptTargetType.gen.cpp.obj",
+			"ExpressionComponent.gen.cpp.obj",
+			"GlobalConditional.gen.cpp.obj",
+			"GlobalConditionalReference.gen.cpp.obj",
+			"GlobalScript.gen.cpp.obj",
+			"GlobalScriptBase.gen.cpp.obj",
+			"GlobalScriptReference.gen.cpp.obj",
+			"GlobalScriptsBundle.gen.cpp.obj",
+			"OEIScripting.init.gen.cpp.obj",
+			"OEIScriptingSettings.gen.cpp.obj",
+			"ScriptCall.gen.cpp.obj",
+			"ScriptEvent.gen.cpp.obj",
+			"ScriptLibrary.gen.cpp.obj",
+			"ScriptLibraryScripting.gen.cpp.obj",
+			"TimelineScriptCall.gen.cpp.obj"
+		]
+	}
+}

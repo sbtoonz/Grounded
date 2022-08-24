@@ -1,0 +1,13 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-OnlineManager.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\UnrealTest\Test\Intermediate\Build\Win64\MaineEditor\Development\Engine\SharedPCH.Engine.h.obj"
+"D:\UnrealTest\Test\Plugins\EnginePlugins\OnlineManager\Intermediate\Build\Win64\UE4Editor\Development\OnlineManager\Module.OnlineManager.cpp.obj"
+"D:\UnrealTest\Test\Plugins\EnginePlugins\OnlineManager\Intermediate\Build\Win64\UE4Editor\Development\OnlineManager\Module.OnlineManager.gen.cpp.obj"
+"D:\UnrealTest\Test\Plugins\EnginePlugins\OnlineManager\Intermediate\Build\Win64\UE4Editor\Development\OnlineManager\Default.rc2.res"
+/OUT:"D:\UnrealTest\Test\Plugins\EnginePlugins\OnlineManager\Intermediate\Build\Win64\UE4Editor\Development\OnlineManager\UE4Editor-OnlineManager.lib"

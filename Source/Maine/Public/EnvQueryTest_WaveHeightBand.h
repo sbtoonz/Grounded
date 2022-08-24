@@ -9,7 +9,7 @@ class MAINE_API UEnvQueryTest_WaveHeightBand : public UEnvQueryTest {
     GENERATED_BODY()
 public:
 private:
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    UPROPERTY(EditAnywhere, meta=(AllowPrivateAccess=true))
     FAIDataProviderBoolValue IsFlyingCreatureWave;
     
 public:
