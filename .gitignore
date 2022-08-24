@@ -17,6 +17,8 @@
 *.so
 *.dylib
 *.dll
+*.gen.cpp
+*.generated.h
 
 # Fortran module files
 *.mod
