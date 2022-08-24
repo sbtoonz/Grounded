@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "ReplicationGraphNode_ActorList.h"
 #include "MaineAlwaysRelevantActorInfo.h"
+#include "ReplicationGraph.h"
 #include "ReplicationGraphNode_AlwaysRelevant_ForConnection_Maine.generated.h"
 
 UCLASS(Blueprintable, NonTransient)
