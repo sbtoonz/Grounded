@@ -14,7 +14,7 @@
 	"IsBetaVersion": false,
 	"IsExperimentalVersion": false,
 	"Installed": true,
-	"Engine": "4.27"
+	"Engine": "4.27",
 	"Modules": [
 		{
 			"Name": "PowerIKRuntime",

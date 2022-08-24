@@ -21,7 +21,7 @@ private: \
 	static void StaticRegisterNativesUOEIGlobalVariableSettings(); \
 	friend struct Z_Construct_UClass_UOEIGlobalVariableSettings_Statics; \
 public: \
-	DECLARE_CLASS(UOEIGlobalVariableSettings, UDeveloperSettings, COMPILED_IN_FLAGS(0 | CLASS_DefaultConfig), CASTCLASS_None, TEXT("/Script/OEIGlobalVariables"), NO_API) \
+	DECLARE_CLASS(UOEIGlobalVariableSettings, UDeveloperSettings, COMPILED_IN_FLAGS(0 | CLASS_DefaultConfig | CLASS_Config), CASTCLASS_None, TEXT("/Script/OEIGlobalVariables"), NO_API) \
 	DECLARE_SERIALIZER(UOEIGlobalVariableSettings) \
 	static const TCHAR* StaticConfigName() {return TEXT("Game");} \
 
@@ -32,7 +32,7 @@ private: \
 	static void StaticRegisterNativesUOEIGlobalVariableSettings(); \
 	friend struct Z_Construct_UClass_UOEIGlobalVariableSettings_Statics; \
 public: \
-	DECLARE_CLASS(UOEIGlobalVariableSettings, UDeveloperSettings, COMPILED_IN_FLAGS(0 | CLASS_DefaultConfig), CASTCLASS_None, TEXT("/Script/OEIGlobalVariables"), NO_API) \
+	DECLARE_CLASS(UOEIGlobalVariableSettings, UDeveloperSettings, COMPILED_IN_FLAGS(0 | CLASS_DefaultConfig | CLASS_Config), CASTCLASS_None, TEXT("/Script/OEIGlobalVariables"), NO_API) \
 	DECLARE_SERIALIZER(UOEIGlobalVariableSettings) \
 	static const TCHAR* StaticConfigName() {return TEXT("Game");} \
 

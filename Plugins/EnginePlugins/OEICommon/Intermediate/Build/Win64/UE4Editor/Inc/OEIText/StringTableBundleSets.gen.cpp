@@ -88,7 +88,7 @@ static struct FScriptStruct_OEIText_StaticRegisterNativesFStringTableBundleSets
 		{ "ModuleRelativePath", "Public/StringTableBundleSets.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FStringTableBundleSets_Statics::NewProp_LanguageCode = { "LanguageCode", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FStringTableBundleSets, LanguageCode), METADATA_PARAMS(Z_Construct_UScriptStruct_FStringTableBundleSets_Statics::NewProp_LanguageCode_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FStringTableBundleSets_Statics::NewProp_LanguageCode_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FStringTableBundleSets_Statics::NewProp_LanguageCode = { "LanguageCode", nullptr, (EPropertyFlags)0x0010000000004005, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FStringTableBundleSets, LanguageCode), METADATA_PARAMS(Z_Construct_UScriptStruct_FStringTableBundleSets_Statics::NewProp_LanguageCode_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FStringTableBundleSets_Statics::NewProp_LanguageCode_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FStringTableBundleSets_Statics::NewProp_PrimaryRegionCode_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
@@ -96,7 +96,7 @@ static struct FScriptStruct_OEIText_StaticRegisterNativesFStringTableBundleSets
 		{ "ModuleRelativePath", "Public/StringTableBundleSets.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FStringTableBundleSets_Statics::NewProp_PrimaryRegionCode = { "PrimaryRegionCode", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FStringTableBundleSets, PrimaryRegionCode), METADATA_PARAMS(Z_Construct_UScriptStruct_FStringTableBundleSets_Statics::NewProp_PrimaryRegionCode_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FStringTableBundleSets_Statics::NewProp_PrimaryRegionCode_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FStringTableBundleSets_Statics::NewProp_PrimaryRegionCode = { "PrimaryRegionCode", nullptr, (EPropertyFlags)0x0010000000004005, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FStringTableBundleSets, PrimaryRegionCode), METADATA_PARAMS(Z_Construct_UScriptStruct_FStringTableBundleSets_Statics::NewProp_PrimaryRegionCode_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FStringTableBundleSets_Statics::NewProp_PrimaryRegionCode_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FStringTableBundleSets_Statics::NewProp_bIsFallbackForLanguage_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
@@ -108,8 +108,8 @@ static struct FScriptStruct_OEIText_StaticRegisterNativesFStringTableBundleSets
 	{
 		((FStringTableBundleSets*)Obj)->bIsFallbackForLanguage = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FStringTableBundleSets_Statics::NewProp_bIsFallbackForLanguage = { "bIsFallbackForLanguage", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FStringTableBundleSets), &Z_Construct_UScriptStruct_FStringTableBundleSets_Statics::NewProp_bIsFallbackForLanguage_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FStringTableBundleSets_Statics::NewProp_bIsFallbackForLanguage_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FStringTableBundleSets_Statics::NewProp_bIsFallbackForLanguage_MetaData)) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FStringTableBundleSets_Statics::NewProp_FallbackRegionCodes_Inner = { "FallbackRegionCodes", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FStringTableBundleSets_Statics::NewProp_bIsFallbackForLanguage = { "bIsFallbackForLanguage", nullptr, (EPropertyFlags)0x0010000000004005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(FStringTableBundleSets), &Z_Construct_UScriptStruct_FStringTableBundleSets_Statics::NewProp_bIsFallbackForLanguage_SetBit, METADATA_PARAMS(Z_Construct_UScriptStruct_FStringTableBundleSets_Statics::NewProp_bIsFallbackForLanguage_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FStringTableBundleSets_Statics::NewProp_bIsFallbackForLanguage_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FStringTableBundleSets_Statics::NewProp_FallbackRegionCodes_Inner = { "FallbackRegionCodes", nullptr, (EPropertyFlags)0x0000000000004000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FStringTableBundleSets_Statics::NewProp_FallbackRegionCodes_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
@@ -117,8 +117,8 @@ static struct FScriptStruct_OEIText_StaticRegisterNativesFStringTableBundleSets
 		{ "ModuleRelativePath", "Public/StringTableBundleSets.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FStringTableBundleSets_Statics::NewProp_FallbackRegionCodes = { "FallbackRegionCodes", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FStringTableBundleSets, FallbackRegionCodes), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UScriptStruct_FStringTableBundleSets_Statics::NewProp_FallbackRegionCodes_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FStringTableBundleSets_Statics::NewProp_FallbackRegionCodes_MetaData)) };
-	const UE4CodeGen_Private::FSoftObjectPropertyParams Z_Construct_UScriptStruct_FStringTableBundleSets_Statics::NewProp_StringTableBundleSets_Inner = { "StringTableBundleSets", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::SoftObject, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UStringTableBundleSet_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FStringTableBundleSets_Statics::NewProp_FallbackRegionCodes = { "FallbackRegionCodes", nullptr, (EPropertyFlags)0x0010000000004005, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FStringTableBundleSets, FallbackRegionCodes), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UScriptStruct_FStringTableBundleSets_Statics::NewProp_FallbackRegionCodes_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FStringTableBundleSets_Statics::NewProp_FallbackRegionCodes_MetaData)) };
+	const UE4CodeGen_Private::FSoftObjectPropertyParams Z_Construct_UScriptStruct_FStringTableBundleSets_Statics::NewProp_StringTableBundleSets_Inner = { "StringTableBundleSets", nullptr, (EPropertyFlags)0x0004000000004000, UE4CodeGen_Private::EPropertyGenFlags::SoftObject, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UStringTableBundleSet_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FStringTableBundleSets_Statics::NewProp_StringTableBundleSets_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
@@ -126,7 +126,7 @@ static struct FScriptStruct_OEIText_StaticRegisterNativesFStringTableBundleSets
 		{ "ModuleRelativePath", "Public/StringTableBundleSets.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FStringTableBundleSets_Statics::NewProp_StringTableBundleSets = { "StringTableBundleSets", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FStringTableBundleSets, StringTableBundleSets), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UScriptStruct_FStringTableBundleSets_Statics::NewProp_StringTableBundleSets_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FStringTableBundleSets_Statics::NewProp_StringTableBundleSets_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FStringTableBundleSets_Statics::NewProp_StringTableBundleSets = { "StringTableBundleSets", nullptr, (EPropertyFlags)0x0014000000004005, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FStringTableBundleSets, StringTableBundleSets), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UScriptStruct_FStringTableBundleSets_Statics::NewProp_StringTableBundleSets_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FStringTableBundleSets_Statics::NewProp_StringTableBundleSets_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FStringTableBundleSets_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FStringTableBundleSets_Statics::NewProp_LanguageCode,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FStringTableBundleSets_Statics::NewProp_PrimaryRegionCode,
@@ -164,7 +164,7 @@ static struct FScriptStruct_OEIText_StaticRegisterNativesFStringTableBundleSets
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FStringTableBundleSets_Hash() { return 3054715660U; }
+	uint32 Get_Z_Construct_UScriptStruct_FStringTableBundleSets_Hash() { return 4200684342U; }
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #ifdef _MSC_VER
 #pragma warning (pop)

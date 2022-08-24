@@ -58,7 +58,7 @@ void EmptyLinkFunctionForGeneratedCodeOEIScriptingSettings() {}
 		{ "ModuleRelativePath", "Public/OEIScriptingSettings.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FSoftObjectPropertyParams Z_Construct_UClass_UOEIScriptingSettings_Statics::NewProp_GlobalScriptsBundles_Inner = { "GlobalScriptsBundles", nullptr, (EPropertyFlags)0x0004000000000000, UE4CodeGen_Private::EPropertyGenFlags::SoftObject, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UGlobalScriptsBundle_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FSoftObjectPropertyParams Z_Construct_UClass_UOEIScriptingSettings_Statics::NewProp_GlobalScriptsBundles_Inner = { "GlobalScriptsBundles", nullptr, (EPropertyFlags)0x0004000000004000, UE4CodeGen_Private::EPropertyGenFlags::SoftObject, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_UGlobalScriptsBundle_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOEIScriptingSettings_Statics::NewProp_GlobalScriptsBundles_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
@@ -66,7 +66,7 @@ void EmptyLinkFunctionForGeneratedCodeOEIScriptingSettings() {}
 		{ "ModuleRelativePath", "Public/OEIScriptingSettings.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UOEIScriptingSettings_Statics::NewProp_GlobalScriptsBundles = { "GlobalScriptsBundles", nullptr, (EPropertyFlags)0x0014000000000005, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UOEIScriptingSettings, GlobalScriptsBundles), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_UOEIScriptingSettings_Statics::NewProp_GlobalScriptsBundles_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOEIScriptingSettings_Statics::NewProp_GlobalScriptsBundles_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UOEIScriptingSettings_Statics::NewProp_GlobalScriptsBundles = { "GlobalScriptsBundles", nullptr, (EPropertyFlags)0x0014000000004005, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UOEIScriptingSettings, GlobalScriptsBundles), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_UOEIScriptingSettings_Statics::NewProp_GlobalScriptsBundles_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOEIScriptingSettings_Statics::NewProp_GlobalScriptsBundles_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOEIScriptingSettings_Statics::NewProp_bExportDataAssetEnums_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
@@ -78,7 +78,7 @@ void EmptyLinkFunctionForGeneratedCodeOEIScriptingSettings() {}
 	{
 		((UOEIScriptingSettings*)Obj)->bExportDataAssetEnums = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UOEIScriptingSettings_Statics::NewProp_bExportDataAssetEnums = { "bExportDataAssetEnums", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UOEIScriptingSettings), &Z_Construct_UClass_UOEIScriptingSettings_Statics::NewProp_bExportDataAssetEnums_SetBit, METADATA_PARAMS(Z_Construct_UClass_UOEIScriptingSettings_Statics::NewProp_bExportDataAssetEnums_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOEIScriptingSettings_Statics::NewProp_bExportDataAssetEnums_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UOEIScriptingSettings_Statics::NewProp_bExportDataAssetEnums = { "bExportDataAssetEnums", nullptr, (EPropertyFlags)0x0010000000004005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UOEIScriptingSettings), &Z_Construct_UClass_UOEIScriptingSettings_Statics::NewProp_bExportDataAssetEnums_SetBit, METADATA_PARAMS(Z_Construct_UClass_UOEIScriptingSettings_Statics::NewProp_bExportDataAssetEnums_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOEIScriptingSettings_Statics::NewProp_bExportDataAssetEnums_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOEIScriptingSettings_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOEIScriptingSettings_Statics::NewProp_GlobalScriptsBundles_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOEIScriptingSettings_Statics::NewProp_GlobalScriptsBundles,
@@ -99,7 +99,7 @@ void EmptyLinkFunctionForGeneratedCodeOEIScriptingSettings() {}
 		0,
 		UE_ARRAY_COUNT(Z_Construct_UClass_UOEIScriptingSettings_Statics::PropPointers),
 		0,
-		0x001000A2u,
+		0x001000A6u,
 		METADATA_PARAMS(Z_Construct_UClass_UOEIScriptingSettings_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UOEIScriptingSettings_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UOEIScriptingSettings()
@@ -111,7 +111,7 @@ void EmptyLinkFunctionForGeneratedCodeOEIScriptingSettings() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UOEIScriptingSettings, 573901938);
+	IMPLEMENT_CLASS(UOEIScriptingSettings, 3272081393);
 	template<> OEISCRIPTING_API UClass* StaticClass<UOEIScriptingSettings>()
 	{
 		return UOEIScriptingSettings::StaticClass();

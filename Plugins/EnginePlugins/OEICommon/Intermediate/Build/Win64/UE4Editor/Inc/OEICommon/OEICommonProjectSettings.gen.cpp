@@ -110,7 +110,7 @@ void EmptyLinkFunctionForGeneratedCodeOEICommonProjectSettings() {}
 		{ "ModuleRelativePath", "Public/OEICommonProjectSettings.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_Packages_Inner = { "Packages", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_Packages_Inner = { "Packages", nullptr, (EPropertyFlags)0x0000000000004000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_Packages_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
@@ -118,7 +118,7 @@ void EmptyLinkFunctionForGeneratedCodeOEICommonProjectSettings() {}
 		{ "ModuleRelativePath", "Public/OEICommonProjectSettings.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_Packages = { "Packages", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UOEICommonProjectSettings, Packages), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_Packages_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_Packages_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_Packages = { "Packages", nullptr, (EPropertyFlags)0x0010000000004005, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UOEICommonProjectSettings, Packages), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_Packages_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_Packages_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_CrashBuddyConfigFile_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
@@ -126,7 +126,7 @@ void EmptyLinkFunctionForGeneratedCodeOEICommonProjectSettings() {}
 		{ "ModuleRelativePath", "Public/OEICommonProjectSettings.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_CrashBuddyConfigFile = { "CrashBuddyConfigFile", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UOEICommonProjectSettings, CrashBuddyConfigFile), METADATA_PARAMS(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_CrashBuddyConfigFile_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_CrashBuddyConfigFile_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_CrashBuddyConfigFile = { "CrashBuddyConfigFile", nullptr, (EPropertyFlags)0x0010000000004005, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UOEICommonProjectSettings, CrashBuddyConfigFile), METADATA_PARAMS(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_CrashBuddyConfigFile_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_CrashBuddyConfigFile_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_ChatterEventQueueTime_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
@@ -134,7 +134,7 @@ void EmptyLinkFunctionForGeneratedCodeOEICommonProjectSettings() {}
 		{ "ModuleRelativePath", "Public/OEICommonProjectSettings.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_ChatterEventQueueTime = { "ChatterEventQueueTime", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UOEICommonProjectSettings, ChatterEventQueueTime), METADATA_PARAMS(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_ChatterEventQueueTime_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_ChatterEventQueueTime_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_ChatterEventQueueTime = { "ChatterEventQueueTime", nullptr, (EPropertyFlags)0x0010000000004005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UOEICommonProjectSettings, ChatterEventQueueTime), METADATA_PARAMS(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_ChatterEventQueueTime_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_ChatterEventQueueTime_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_ChatterEventWaitTime_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
@@ -142,7 +142,7 @@ void EmptyLinkFunctionForGeneratedCodeOEICommonProjectSettings() {}
 		{ "ModuleRelativePath", "Public/OEICommonProjectSettings.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_ChatterEventWaitTime = { "ChatterEventWaitTime", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UOEICommonProjectSettings, ChatterEventWaitTime), METADATA_PARAMS(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_ChatterEventWaitTime_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_ChatterEventWaitTime_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_ChatterEventWaitTime = { "ChatterEventWaitTime", nullptr, (EPropertyFlags)0x0010000000004005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UOEICommonProjectSettings, ChatterEventWaitTime), METADATA_PARAMS(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_ChatterEventWaitTime_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_ChatterEventWaitTime_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_ChatterEventQueueProcessLimit_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
@@ -150,7 +150,7 @@ void EmptyLinkFunctionForGeneratedCodeOEICommonProjectSettings() {}
 		{ "ModuleRelativePath", "Public/OEICommonProjectSettings.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_ChatterEventQueueProcessLimit = { "ChatterEventQueueProcessLimit", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UOEICommonProjectSettings, ChatterEventQueueProcessLimit), METADATA_PARAMS(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_ChatterEventQueueProcessLimit_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_ChatterEventQueueProcessLimit_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_ChatterEventQueueProcessLimit = { "ChatterEventQueueProcessLimit", nullptr, (EPropertyFlags)0x0010000000004005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UOEICommonProjectSettings, ChatterEventQueueProcessLimit), METADATA_PARAMS(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_ChatterEventQueueProcessLimit_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_ChatterEventQueueProcessLimit_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_bShowTextReviewPrefixes_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
@@ -162,7 +162,7 @@ void EmptyLinkFunctionForGeneratedCodeOEICommonProjectSettings() {}
 	{
 		((UOEICommonProjectSettings*)Obj)->bShowTextReviewPrefixes = 1;
 	}
-	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_bShowTextReviewPrefixes = { "bShowTextReviewPrefixes", nullptr, (EPropertyFlags)0x0040000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UOEICommonProjectSettings), &Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_bShowTextReviewPrefixes_SetBit, METADATA_PARAMS(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_bShowTextReviewPrefixes_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_bShowTextReviewPrefixes_MetaData)) };
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_bShowTextReviewPrefixes = { "bShowTextReviewPrefixes", nullptr, (EPropertyFlags)0x0040000000004005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UOEICommonProjectSettings), &Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_bShowTextReviewPrefixes_SetBit, METADATA_PARAMS(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_bShowTextReviewPrefixes_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_bShowTextReviewPrefixes_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_WorldRuntimeClassName_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
@@ -170,7 +170,7 @@ void EmptyLinkFunctionForGeneratedCodeOEICommonProjectSettings() {}
 		{ "ModuleRelativePath", "Public/OEICommonProjectSettings.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_WorldRuntimeClassName = { "WorldRuntimeClassName", nullptr, (EPropertyFlags)0x0040000000000005, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UOEICommonProjectSettings, WorldRuntimeClassName), Z_Construct_UScriptStruct_FSoftClassPath, METADATA_PARAMS(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_WorldRuntimeClassName_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_WorldRuntimeClassName_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_WorldRuntimeClassName = { "WorldRuntimeClassName", nullptr, (EPropertyFlags)0x0040000000004005, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UOEICommonProjectSettings, WorldRuntimeClassName), Z_Construct_UScriptStruct_FSoftClassPath, METADATA_PARAMS(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_WorldRuntimeClassName_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_WorldRuntimeClassName_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_ExportedFolder_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
@@ -178,7 +178,7 @@ void EmptyLinkFunctionForGeneratedCodeOEICommonProjectSettings() {}
 		{ "ModuleRelativePath", "Public/OEICommonProjectSettings.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_ExportedFolder = { "ExportedFolder", nullptr, (EPropertyFlags)0x0040000000000005, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UOEICommonProjectSettings, ExportedFolder), METADATA_PARAMS(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_ExportedFolder_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_ExportedFolder_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_ExportedFolder = { "ExportedFolder", nullptr, (EPropertyFlags)0x0040000000004005, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UOEICommonProjectSettings, ExportedFolder), METADATA_PARAMS(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_ExportedFolder_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_ExportedFolder_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_DesignSourceFolder_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
@@ -186,7 +186,7 @@ void EmptyLinkFunctionForGeneratedCodeOEICommonProjectSettings() {}
 		{ "ModuleRelativePath", "Public/OEICommonProjectSettings.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_DesignSourceFolder = { "DesignSourceFolder", nullptr, (EPropertyFlags)0x0040000000000005, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UOEICommonProjectSettings, DesignSourceFolder), METADATA_PARAMS(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_DesignSourceFolder_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_DesignSourceFolder_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_DesignSourceFolder = { "DesignSourceFolder", nullptr, (EPropertyFlags)0x0040000000004005, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UOEICommonProjectSettings, DesignSourceFolder), METADATA_PARAMS(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_DesignSourceFolder_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_DesignSourceFolder_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_DesignStagingFolder_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
@@ -194,7 +194,7 @@ void EmptyLinkFunctionForGeneratedCodeOEICommonProjectSettings() {}
 		{ "ModuleRelativePath", "Public/OEICommonProjectSettings.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_DesignStagingFolder = { "DesignStagingFolder", nullptr, (EPropertyFlags)0x0040000000000005, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UOEICommonProjectSettings, DesignStagingFolder), METADATA_PARAMS(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_DesignStagingFolder_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_DesignStagingFolder_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_DesignStagingFolder = { "DesignStagingFolder", nullptr, (EPropertyFlags)0x0040000000004005, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UOEICommonProjectSettings, DesignStagingFolder), METADATA_PARAMS(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_DesignStagingFolder_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_DesignStagingFolder_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_OverrideFolder_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
@@ -202,7 +202,7 @@ void EmptyLinkFunctionForGeneratedCodeOEICommonProjectSettings() {}
 		{ "ModuleRelativePath", "Public/OEICommonProjectSettings.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_OverrideFolder = { "OverrideFolder", nullptr, (EPropertyFlags)0x0040000000000005, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UOEICommonProjectSettings, OverrideFolder), METADATA_PARAMS(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_OverrideFolder_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_OverrideFolder_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_OverrideFolder = { "OverrideFolder", nullptr, (EPropertyFlags)0x0040000000004005, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UOEICommonProjectSettings, OverrideFolder), METADATA_PARAMS(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_OverrideFolder_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_OverrideFolder_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_QuickSaveFilename_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
@@ -210,7 +210,7 @@ void EmptyLinkFunctionForGeneratedCodeOEICommonProjectSettings() {}
 		{ "ModuleRelativePath", "Public/OEICommonProjectSettings.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_QuickSaveFilename = { "QuickSaveFilename", nullptr, (EPropertyFlags)0x0040000000000005, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UOEICommonProjectSettings, QuickSaveFilename), METADATA_PARAMS(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_QuickSaveFilename_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_QuickSaveFilename_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_QuickSaveFilename = { "QuickSaveFilename", nullptr, (EPropertyFlags)0x0040000000004005, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UOEICommonProjectSettings, QuickSaveFilename), METADATA_PARAMS(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_QuickSaveFilename_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_QuickSaveFilename_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_SaveBeforeLinkFilename_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
@@ -218,7 +218,7 @@ void EmptyLinkFunctionForGeneratedCodeOEICommonProjectSettings() {}
 		{ "ModuleRelativePath", "Public/OEICommonProjectSettings.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_SaveBeforeLinkFilename = { "SaveBeforeLinkFilename", nullptr, (EPropertyFlags)0x0040000000000005, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UOEICommonProjectSettings, SaveBeforeLinkFilename), METADATA_PARAMS(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_SaveBeforeLinkFilename_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_SaveBeforeLinkFilename_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_SaveBeforeLinkFilename = { "SaveBeforeLinkFilename", nullptr, (EPropertyFlags)0x0040000000004005, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UOEICommonProjectSettings, SaveBeforeLinkFilename), METADATA_PARAMS(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_SaveBeforeLinkFilename_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_SaveBeforeLinkFilename_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_AutoSaveFilename_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
@@ -226,7 +226,7 @@ void EmptyLinkFunctionForGeneratedCodeOEICommonProjectSettings() {}
 		{ "ModuleRelativePath", "Public/OEICommonProjectSettings.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_AutoSaveFilename = { "AutoSaveFilename", nullptr, (EPropertyFlags)0x0040000000000005, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UOEICommonProjectSettings, AutoSaveFilename), METADATA_PARAMS(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_AutoSaveFilename_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_AutoSaveFilename_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_AutoSaveFilename = { "AutoSaveFilename", nullptr, (EPropertyFlags)0x0040000000004005, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UOEICommonProjectSettings, AutoSaveFilename), METADATA_PARAMS(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_AutoSaveFilename_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_AutoSaveFilename_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_SaveFileExtension_MetaData[] = {
 		{ "AllowPrivateAccess", "TRUE" },
@@ -234,7 +234,7 @@ void EmptyLinkFunctionForGeneratedCodeOEICommonProjectSettings() {}
 		{ "ModuleRelativePath", "Public/OEICommonProjectSettings.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_SaveFileExtension = { "SaveFileExtension", nullptr, (EPropertyFlags)0x0040000000000005, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UOEICommonProjectSettings, SaveFileExtension), METADATA_PARAMS(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_SaveFileExtension_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_SaveFileExtension_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_SaveFileExtension = { "SaveFileExtension", nullptr, (EPropertyFlags)0x0040000000004005, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UOEICommonProjectSettings, SaveFileExtension), METADATA_PARAMS(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_SaveFileExtension_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_SaveFileExtension_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOEICommonProjectSettings_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_Packages_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOEICommonProjectSettings_Statics::NewProp_Packages,
@@ -268,7 +268,7 @@ void EmptyLinkFunctionForGeneratedCodeOEICommonProjectSettings() {}
 		0,
 		UE_ARRAY_COUNT(Z_Construct_UClass_UOEICommonProjectSettings_Statics::PropPointers),
 		0,
-		0x001000A2u,
+		0x001000A6u,
 		METADATA_PARAMS(Z_Construct_UClass_UOEICommonProjectSettings_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UOEICommonProjectSettings_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UOEICommonProjectSettings()
@@ -280,7 +280,7 @@ void EmptyLinkFunctionForGeneratedCodeOEICommonProjectSettings() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UOEICommonProjectSettings, 2157670302);
+	IMPLEMENT_CLASS(UOEICommonProjectSettings, 1822974560);
 	template<> OEICOMMON_API UClass* StaticClass<UOEICommonProjectSettings>()
 	{
 		return UOEICommonProjectSettings::StaticClass();

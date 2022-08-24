@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeOEIScripting_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0xD3A8950B,
+				0x14E9F41B,
 				0x3AA41373,
 				METADATA_PARAMS(nullptr, 0)
 			};
