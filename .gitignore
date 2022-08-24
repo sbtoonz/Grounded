@@ -15,6 +15,16 @@
 *.so
 *.dylib
 *.dll
+*.gen.cpp
+*.generated.h
+*.cpp.txt
+*.exp
+*.txt.tmp
+Timestamp
+*.response*
+*.old
+*.pdb
+*.modules
 
 # Fortran module files
 *.mod

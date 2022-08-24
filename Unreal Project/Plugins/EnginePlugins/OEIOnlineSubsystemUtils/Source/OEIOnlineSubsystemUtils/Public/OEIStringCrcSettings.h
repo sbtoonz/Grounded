@@ -7,10 +7,10 @@ UCLASS(DefaultConfig)
 class OEIONLINESUBSYSTEMUTILS_API UOEIStringCrcSettings : public UDeveloperSettings {
     GENERATED_BODY()
 public:
-    UPROPERTY(Config, EditAnywhere)
+    UPROPERTY(EditAnywhere)
     bool UseStringCrcForPackageGUID;
     
-    UPROPERTY(Config, EditAnywhere)
+    UPROPERTY(EditAnywhere)
     TArray<FString> CustomStrings;
     
     UOEIStringCrcSettings();

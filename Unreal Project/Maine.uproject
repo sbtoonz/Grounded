@@ -11,8 +11,7 @@
 			"AdditionalDependencies": [
 				"Engine",
 				"UMG",
-				"OEICommon",
-				"OEIText"
+				"OEIOnlineSubsystemUtils"
 			]
 		}
 	],
@@ -21,6 +20,10 @@
 			"Name": "PlayFab",
 			"Enabled": true,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/217fdf581b784571af03d3fb6580368f"
+		},
+		{
+			"Name": "OEICommon",
+			"Enabled": true
 		}
 	],
 	"TargetPlatforms": [

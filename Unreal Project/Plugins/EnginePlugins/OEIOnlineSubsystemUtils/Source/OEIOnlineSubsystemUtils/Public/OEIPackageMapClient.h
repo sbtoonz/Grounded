@@ -7,7 +7,7 @@ UCLASS(DefaultConfig, NonTransient)
 class OEIONLINESUBSYSTEMUTILS_API UOEIPackageMapClient : public UPackageMapClient {
     GENERATED_BODY()
 public:
-    UPROPERTY(Config)
+    UPROPERTY()
     TArray<FString> NetGUIDResetExceptionFilters;
     
     UOEIPackageMapClient();
