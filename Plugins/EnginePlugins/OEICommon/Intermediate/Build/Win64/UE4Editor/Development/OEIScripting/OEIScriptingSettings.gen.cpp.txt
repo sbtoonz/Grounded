@@ -1,5 +1,0 @@
-D:\UnrealTest\Test\Plugins\EnginePlugins\OEICommon\Intermediate\Build\Win64\UE4Editor\Development\OEIScripting\Definitions.OEIScripting.h
-D:\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
-D:\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-D:\UnrealTest\Test\Plugins\EnginePlugins\OEICommon\Source\OEIScripting/Public/OEIScriptingSettings.h
-D:\UnrealTest\Test\Plugins\EnginePlugins\OEICommon\Intermediate\Build\Win64\UE4Editor\Inc\OEIScripting\OEIScriptingSettings.generated.h

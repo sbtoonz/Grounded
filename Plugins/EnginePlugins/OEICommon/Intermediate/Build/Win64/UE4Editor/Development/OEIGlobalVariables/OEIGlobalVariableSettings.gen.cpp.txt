@@ -1,5 +1,0 @@
-D:\UnrealTest\Test\Plugins\EnginePlugins\OEICommon\Intermediate\Build\Win64\UE4Editor\Development\OEIGlobalVariables\Definitions.OEIGlobalVariables.h
-D:\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
-D:\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-D:\UnrealTest\Test\Plugins\EnginePlugins\OEICommon\Source\OEIGlobalVariables/Public/OEIGlobalVariableSettings.h
-D:\UnrealTest\Test\Plugins\EnginePlugins\OEICommon\Intermediate\Build\Win64\UE4Editor\Inc\OEIGlobalVariables\OEIGlobalVariableSettings.generated.h

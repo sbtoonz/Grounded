@@ -1,7 +1,0 @@
-D:\UnrealTest\Test\Plugins\EnginePlugins\PlayFab\Intermediate\Build\Win64\UE4Editor\Development\PlayFab\Definitions.PlayFab.h
-D:\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
-D:\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-D:\UnrealTest\Test\Plugins\EnginePlugins\PlayFab\Source\PlayFab/Public/ClientGetPlayerProfileRequest.h
-D:\UnrealTest\Test\Plugins\EnginePlugins\PlayFab\Source\PlayFab\Public\PlayFabRequestCommon.h
-D:\UnrealTest\Test\Plugins\EnginePlugins\PlayFab\Intermediate\Build\Win64\UE4Editor\Inc\PlayFab\PlayFabRequestCommon.generated.h
-D:\UnrealTest\Test\Plugins\EnginePlugins\PlayFab\Intermediate\Build\Win64\UE4Editor\Inc\PlayFab\ClientGetPlayerProfileRequest.generated.h
