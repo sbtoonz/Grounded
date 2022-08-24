@@ -13,7 +13,7 @@ public:
     UPROPERTY(BlueprintReadWrite, Config, EditAnywhere, NoClear, meta=(AllowPrivateAccess=true))
     TSubclassOf<UAISense_Sound> Implementation;
     
-    UPROPERTY(BlueprintReadWrite, Config, EditAnywhere, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float HearingRadius;
     
     UAISenseConfig_Sound();

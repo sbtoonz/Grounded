@@ -7,7 +7,7 @@ UCLASS(Blueprintable, DefaultConfig, NonTransient)
 class OEIONLINESUBSYSTEMUTILS_API UOEIPackageMapClient : public UPackageMapClient {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintReadWrite, Config, EditAnywhere, meta=(AllowPrivateAccess=true))
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<FString> NetGUIDResetExceptionFilters;
     
     UOEIPackageMapClient();
