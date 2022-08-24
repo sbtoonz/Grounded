@@ -22,6 +22,8 @@
 *.cpp.txt
 *.exp
 *.txt.tmp
+Timestamp
+*.response
 
 # Fortran module files
 *.mod
