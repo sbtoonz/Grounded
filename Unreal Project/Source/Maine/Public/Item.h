@@ -34,48 +34,48 @@ class USoundCue;
 class AActor;
 class USurvivalDamageType;
 
-UCLASS(BlueprintType)
+UCLASS(Blueprintable)
 class MAINE_API UItem : public UPersistentObject, public IStatusEffectOrigin {
     GENERATED_BODY()
 public:
     UPROPERTY()
     TWeakObjectPtr<USpawnedItemLODActor> ItemVisuals;
     
-    UPROPERTY(BlueprintAssignable)
+    UPROPERTY(BlueprintReadWrite)
     FOnPowerStateChanged OnPowerStateChangedDelegate;
     
-    UPROPERTY(BlueprintAssignable)
+    UPROPERTY(BlueprintReadWrite)
     FOnLaunchAttack OnLaunchAttack;
     
-    UPROPERTY(BlueprintAssignable)
+    UPROPERTY(BlueprintReadWrite)
     FOnHitWithAttack OnHitWithAttack;
     
-    UPROPERTY(BlueprintAssignable)
+    UPROPERTY(BlueprintReadWrite)
     FOnSelectedAmmoChanged OnSelectedAmmoChanged;
     
-    UPROPERTY(BlueprintAssignable)
+    UPROPERTY(BlueprintReadWrite)
     FOnItemChanged OnItemChanged;
     
-    UPROPERTY(BlueprintAssignable)
+    UPROPERTY(BlueprintReadWrite)
     FOnItemChanged OnItemEnhanced;
     
 protected:
-    UPROPERTY(ReplicatedUsing=OnRep_ItemDataRowHandle)
+    UPROPERTY(BlueprintReadWrite, ReplicatedUsing=OnRep_ItemDataRowHandle)
     FDataTableRowHandle ItemDataRowHandle;
     
-    UPROPERTY(ReplicatedUsing=OnRep_PropertyChanged)
+    UPROPERTY(BlueprintReadWrite, ReplicatedUsing=OnRep_PropertyChanged)
     int32 StackSize;
     
-    UPROPERTY(Replicated)
+    UPROPERTY(BlueprintReadWrite,Replicated)
     int32 InventorySlot;
     
-    UPROPERTY(Replicated)
+    UPROPERTY(BlueprintReadWrite, Replicated)
     float SpoilEndTime;
     
-    UPROPERTY(Replicated)
+    UPROPERTY(BlueprintReadWrite, Replicated)
     float PausedSpoilProgress;
     
-    UPROPERTY(Replicated)
+    UPROPERTY(BlueprintReadWrite, Replicated)
     float HatchEndTime;
     
     UPROPERTY(ReplicatedUsing=OnRep_SelectedAmmoType)
@@ -93,41 +93,41 @@ protected:
     UPROPERTY(Transient)
     TMap<FName, UAttack*> AmmoAttacks;
     
-    UPROPERTY(ReplicatedUsing=OnRep_PropertyChanged)
+    UPROPERTY(BlueprintReadWrite, ReplicatedUsing=OnRep_PropertyChanged)
     float PowerUsed;
     
-    UPROPERTY(ReplicatedUsing=OnRep_IsPowerOn)
+    UPROPERTY(BlueprintReadWrite, ReplicatedUsing=OnRep_IsPowerOn)
     uint8 IsPowerOn: 1;
     
     UPROPERTY(BlueprintReadOnly, ReplicatedUsing=OnRep_PowerReservoir)
     FPowerReservoir PowerReservoir;
     
-    UPROPERTY(ReplicatedUsing=OnRep_PropertyChanged)
+    UPROPERTY(BlueprintReadWrite, ReplicatedUsing=OnRep_PropertyChanged)
     float DurabilityRemaining;
     
-    UPROPERTY(Replicated)
+    UPROPERTY(BlueprintReadWrite, BlueprintReadWrite, Replicated)
     FString SourceCreatureName;
     
-    UPROPERTY(ReplicatedUsing=OnRep_EnhancementChanged)
+    UPROPERTY(BlueprintReadWrite, ReplicatedUsing=OnRep_EnhancementChanged)
     int32 BaseEnhancementLevel;
     
     UPROPERTY(ReplicatedUsing=OnRep_EnhancementChanged)
     int32 BonusEnhancementLevel;
     
-    UPROPERTY(ReplicatedUsing=OnRep_EnhancementChanged)
+    UPROPERTY(BlueprintReadWrite, ReplicatedUsing=OnRep_EnhancementChanged)
     FGameplayTag BonusEnhancementType;
     
 public:
     UItem();
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool UsesPowerType(FGameplayTag PowerType) const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool UsesPower() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool UsesAmmo() const;
     
     UFUNCTION(BlueprintCallable)
@@ -149,71 +149,71 @@ public:
     void RemoveDurability(float Amount);
     
 protected:
-    UFUNCTION()
+    UFUNCTION(BlueprintCallable)
     void OnRep_SelectedAmmoType();
     
-    UFUNCTION()
+    UFUNCTION(BlueprintCallable)
     void OnRep_PropertyChanged();
     
-    UFUNCTION()
+    UFUNCTION(BlueprintCallable)
     void OnRep_PowerReservoir();
     
-    UFUNCTION()
+    UFUNCTION(BlueprintCallable)
     void OnRep_ItemDataRowHandle(FDataTableRowHandle PreviousHandle);
     
-    UFUNCTION()
+    UFUNCTION(BlueprintCallable)
     void OnRep_IsPowerOn();
     
-    UFUNCTION()
+    UFUNCTION(BlueprintCallable)
     void OnRep_EnhancementChanged();
     
-    UFUNCTION()
+    UFUNCTION(BlueprintCallable)
     void OnPowerStoredChanged(const FGameplayTag& PowerType, float ChargesStored);
     
 public:
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool IsValidBonusEnhancementType(FGameplayTag EnhancementType) const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool IsStackFull() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool IsPowerFull() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool IsPowerEmpty() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool IsPersonalKeyItem() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool IsPartyKeyItem() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool IsLightSource() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool IsInstanceOf(const FDataTableRowHandle& Row) const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool IsFullyCharged() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool IsEquipped() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool IsCharged() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool IsBusy() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool IsBroken() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool IsAtMaxDurability() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool IsArmorItem() const;
     
     UFUNCTION(BlueprintCallable)
@@ -222,247 +222,247 @@ public:
     UFUNCTION(BlueprintCallable)
     int32 IncrementStackSize();
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool HasTag(FGameplayTag Tag) const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool HasDurability() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool HasConversation() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool HasConsumableEffectEver() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool HasConsumableEffect() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool HasAnyTag(FGameplayTagContainer Tags) const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     FGameplayTagContainer GetValidBonusEnhancementTags() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     TArray<UItem*> GetValidAmmoTypes() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     FLocString GetTypeDisplayName() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     float GetTotalSpoilTime() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     float GetTotalHatchTime() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     int32 GetTotalEnhancementLevels() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     float GetThrowSpeedMultiplierInWater() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     float GetThrowSpeedMultiplier() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     EThrowAttackType GetThrowAttackType() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     float GetThrowAttackDelay() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     TArray<FDataTableRowHandle> GetTechTreeUnlocks() const;
     
     UFUNCTION(BlueprintCallable)
     UAttack* GetSwimmingAttack(int32 Index);
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     int32 GetStackSize() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     ESpoilState GetSpoilState() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     float GetSpoilProgress() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     FString GetSourceCreatureName() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     FName GetSelectedAmmoType() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     TArray<FDataTableRowHandle> GetResearchRecipeUnlocks() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     void GetRepairRequirements(TArray<FRecipeRequirements>& OutRequirements) const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     int32 GetRemainingAmmo() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     TArray<FDataTableRowHandle> GetRecipeUnlocks() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     int32 GetProcessedResultItemCount(FGameplayTag ProcessingType) const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     FDataTableRowHandle GetProcessedResultItem(FGameplayTag ProcessingType) const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     FPowerReservoir GetPowerReservoir();
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     float GetPowerPercentage() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     USoundCue* GetPickupAudio();
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     float GetPercentageDamageReduction() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     TArray<FDataTableRowHandle> GetNewResearchRecipeUnlocks() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     int32 GetMaxStackSize() const;
     
     UFUNCTION(BlueprintCallable)
     int32 GetMaxHaulingAmount();
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     float GetMaxDurability() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     USpawnedItemLODActor* GetLodItemVisuals() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     ASpawnedItem* GetItemVisuals() const;
     
     UFUNCTION(BlueprintCallable)
     EItemType GetItemType();
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     FDataTableRowHandle GetItemRequiredForEnhancement() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     FDataTableRowHandle GetItemDataRowHandle() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     FBaseItemData GetItemData();
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     int32 GetItemCountRequiredForBonusEnhancement() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     int32 GetItemCountRequiredForBaseEnhancement() const;
     
     UFUNCTION(BlueprintCallable)
     bool GetIsPowerOn();
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     int32 GetInventorySlot() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     float GetImpactSoundRange() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     float GetImpactSoundIntensity() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     FDataTableRowHandle GetImpactAttack() const;
     
     UFUNCTION(BlueprintCallable)
     EHUDMarkerType GetHUDMarkerType();
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     float GetHatchProgress() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     float GetGlideTimeRemaining() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     float GetGardenModifierValue() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     EGardenModifierType GetGardenModifierType() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     float GetFlatDamageReduction() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     AActor* GetEquippedOwner() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     EEquipmentSlot GetEquipmentSlot() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     USoundCue* GetEquipAudio();
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     int32 GetEnhancementLevel() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     float GetDurabilityRemaining() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     float GetDurabilityRatio() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     float GetDurabilityModifier() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     FString GetDisplayName() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     FLocString GetDescription() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     float GetDamageReductionModifier() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     int32 GetConversationStartNode() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     FGuid GetConversationID() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     USoundCue* GetConsumeAudio();
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     FGameplayTag GetBonusEnhancementType() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     int32 GetBonusEnhancementLevel() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     float GetBlockStaminaRegenMultiplier() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     float GetBlockStaminaCost() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     float GetBlockDamageMultiplier() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     int32 GetAvailableStackSize() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     FString GetAttackSpeedText() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     FGameplayTag GetAttackSpeedTag() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     TSubclassOf<USurvivalDamageType> GetAttackDamageTypeModifier() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     uint8 GetAttackDamageTypeFlags();
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     float GetAttackDamageModifier() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     TArray<FName> GetAmmoTypes() const;
     
     UFUNCTION(BlueprintCallable)
@@ -471,94 +471,94 @@ public:
     UFUNCTION(BlueprintCallable)
     void DumpPower(const AActor* Dumper);
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool DestroyOnThrowAttack() const;
     
     UFUNCTION(BlueprintCallable)
     int32 DecrementStackSize();
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool ConsumesPowerDuringRest() const;
     
     UFUNCTION(BlueprintCallable)
     void ConsumeCharge();
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool CanUse(const AActor* Instigator) const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool CanTrash() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool CanThrowUnderWater() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool CanThrow() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool CanStack() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool CanSpoil();
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool CanRepairNow() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool CanRepair() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool CanProcess(FGameplayTag ProcessingType) const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool CanPowerBeUsedInWater() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool CanHatch();
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool CanGetBonusEnhancements() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool CanEverUse() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool CanEverEnhance() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool CanEverDumpPower() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool CanEquipTo(const AActor* Character) const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool CanEquip() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool CanEnhance() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool CanDumpPower() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool CanBlock() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool CanAttack() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool CanAnalyze() const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool CanAddPower(FGameplayTag PowerType, float Charges) const;
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool CanAcceptPowerType(FGameplayTag PowerType) const;
     
     UFUNCTION(BlueprintCallable)
     bool AppliesPositiveSurvivalStatOnConsume(EStatusEffectType StatusEffectType, bool IgnoreNegativeEffects);
     
-    UFUNCTION(BlueprintPure)
+    UFUNCTION(BlueprintCallable)
     bool AlwaysOn() const;
     
     UFUNCTION(BlueprintCallable)
