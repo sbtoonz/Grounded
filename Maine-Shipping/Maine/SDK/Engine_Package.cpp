@@ -10563,8 +10563,8 @@ namespace CG
 	{
 		FVector worldPos{};
 		
-		const TArray<struct FTransform>& componentSpaceTransforms = /* CachedBoneSpaceTransforms */;
-		int32_t componentToWorldOffset = /* 0x1C0 || 0x1D0 || 0x190 */;
+		const TArray<struct FTransform>& componentSpaceTransforms =  CachedBoneSpaceTransforms ;
+		int32_t componentToWorldOffset =  0x1C0 || 0x1D0 || 0x190 ;
 		
 		if (boneId >= componentSpaceTransforms.Count())
 			return worldPos;
@@ -39085,11 +39085,11 @@ namespace CG
 	{
 		std::vector<FName> ret;
 		
-		for (int32_t i = 0; i < RowMap.Data.Count(); ++i)
-		{
-			CG::TPair<CG::FName, unsigned char*> itemRow = RowMap.Data[i].Value;
-			ret.push_back(itemRow.First);
-		}
+		//for (int32_t i = 0; i < RowMap.Data.Count(); ++i)
+		//{
+		//	CG::TPair<CG::FName, unsigned char*> itemRow = RowMap.Data[i].Value;
+		//	ret.push_back(itemRow.First);
+		//}
 		
 		return ret;
 	}

@@ -59,7 +59,7 @@ namespace CG
 	 * Class Maine.GameUserWidget
 	 * Size -> 0x0008 (FullSize[0x0278] - InheritedSize[0x0270])
 	 */
-	class UGameUserWidget : public UNarratableUserWidget
+	class UGameUserWidget
 	{
 	public:
 		unsigned char                                              UnknownData_WWX2[0x8];                                   // 0x0270(0x0008) MISSED OFFSET (PADDING)

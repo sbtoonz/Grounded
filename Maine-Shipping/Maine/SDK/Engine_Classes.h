@@ -6071,9 +6071,9 @@ namespace CG
 		template<class T>
 		inline T* FindRow(const CG::FName& rowName) const
 		{
-			for (int32_t i = 0; i < RowMap.Data.Count(); ++i)
+			for (int32_t i = 0; i < UnknownData_4E16[0x50].Data.Count(); ++i)
 			{
-				CG::TPair<CG::FName, unsigned char*> curRowPair = RowMap.Data[i].Value;
+				CG::TPair<CG::FName, unsigned char*> curRowPair = UnknownData_4E16[0x50].Value;
 				CG::FName& curRowName = curRowPair.First;
 				if (curRowName.ComparisonIndex == rowName.ComparisonIndex && curRowName.Number == rowName.Number)
 				{

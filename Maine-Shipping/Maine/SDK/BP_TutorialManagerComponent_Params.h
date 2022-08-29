@@ -44,15 +44,6 @@ namespace CG
 	};
 
 	/**
-	 * Function BP_TutorialManagerComponent.BP_TutorialManagerComponent_C.Day 2 Quests
-	 */
-	struct UBP_TutorialManagerComponent_C_Day_Quests_Params
-	{
-	public:
-		int32_t                                                    Hour;                                                    // 0x0000(0x0004)  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	};
-
-	/**
 	 * Function BP_TutorialManagerComponent.BP_TutorialManagerComponent_C.ReceiveBeginPlay
 	 */
 	struct UBP_TutorialManagerComponent_C_ReceiveBeginPlay_Params

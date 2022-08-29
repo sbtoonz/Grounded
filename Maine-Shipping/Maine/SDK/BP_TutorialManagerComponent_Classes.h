@@ -29,7 +29,6 @@ namespace CG
 		void GetPlayerStateFromComponent(class UActorComponent* ActorComponent, class ASurvivalPlayerState** PlayerState);
 		void Day_Change(int32_t NewHour, int32_t NewDay);
 		void Day_Quests(int32_t Hour);
-		void Day_Quests(int32_t Hour);
 		void ReceiveBeginPlay();
 		void BindPlayerEvents(class ABP_SurvivalPlayerCharacter_C* SurvivalPlayer);
 		void HandleOnItemCrafted(class UInventoryComponent* Sender, const struct FDataTableRowHandle& ItemHandle);
